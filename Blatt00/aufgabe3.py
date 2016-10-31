@@ -46,13 +46,15 @@ def aufg3():
 
 
 	fig = plt.figure(figsize=(16,9))
-	plt.plot(xx,f(xx),'rx',markersize=5,label=r'$f(x)$')
+	plt.plot(xx,f(xx),'rx',markersize=10,label=r'$f(x)$')
 	plt.plot(xx,f_alg(xx),'k--',label=r'vereinfacht $f(x) = g(x) = 2/3$')
 	plt.plot(xx,g(xx),'bo',label=r'$g(x)$')
 	plt.xlabel(r'x')
 	plt.ylabel(r'Wert der Funktion')
 	plt.xscale('log')
 	#plt.yscale('log')
+	#plt.xlim(-1e-2,1e20)
+	plt.ylim(-1e-2 , 0.9)
 	plt.legend(loc='best')
 	plt.savefig("plot3.png",dpi=300)
 	plt.show()
