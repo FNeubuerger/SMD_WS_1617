@@ -28,7 +28,7 @@ def aufg2():
 	plt.ylabel(r'Wert der Funktion')
 	plt.xscale('log')
 	plt.legend(loc='best')
-	plt.savefig("plot2.png",dpi=300)
+	plt.savefig("plot2.png")
 	plt.show()
 
 if __name__ == '__main__':

@@ -56,7 +56,7 @@ def aufg3():
 	#plt.xlim(-1e-2,1e20)
 	plt.ylim(-1e-2 , 0.9)
 	plt.legend(loc='best')
-	plt.savefig("plot3.png",dpi=300)
+	plt.savefig("plot3.png")
 	plt.show()
 
 if __name__ == '__main__':

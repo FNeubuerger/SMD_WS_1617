@@ -43,7 +43,7 @@ def aufg1():
 	plt.legend(loc='best',fontsize=14)
 	
 	plt.xlabel(r'x')
-	plt.savefig("plot1.png",dpi=300)
+	plt.savefig("plot1.png")
 	plt.show()
 
 if __name__ == '__main__':
