@@ -22,6 +22,7 @@ def aufg2():
 	##########################
 
 	fig = plt.figure(figsize=(16,9))
+	plt.rcParams.update({'font.size': 22})
 	plt.plot(xx,f(xx),'rx',label='f(x)')
 	plt.plot(xx,c(xx),'k--',label='analytischer Grenzwert')
 	plt.xlabel(r'x')

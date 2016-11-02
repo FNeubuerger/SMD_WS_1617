@@ -25,7 +25,6 @@ def aufg1():
 	##########################
 
 	fig = plt.figure(figsize=(16,9))
-
 	ax1=plt.subplot(3,1,1)
 	plt.xlim(0.999,1.001)
 	plt.plot(xx,f(xx),label='$(1-x)^6$')

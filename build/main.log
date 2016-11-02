@@ -1,0 +1,29 @@
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  2 NOV 2016 23:11
+ restricted \write18 enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+
+! LaTeX Error: File `../../header.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+   
+l.1 \input{../../header.tex}
+                          
+
+Here is how much of LuaTeX's memory you used:
+ 10 strings out of 494693
+ 100000,89155 words of node,token memory allocated
+ 188 words of node memory still in use:
+   31 glue_spec, 1 dir nodes
+   avail lists: 2:12,3:1
+ 3848 multiletter control sequences out of 65536+600000
+ 14 fonts using 562767 bytes
+ 5i,0n,3p,34b,8s stack positions out of 5000i,500n,10000p,200000b,100000s
+!  ==> Fatal error occurred, no output PDF file produced!

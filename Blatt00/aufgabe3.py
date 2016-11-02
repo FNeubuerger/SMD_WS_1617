@@ -49,6 +49,7 @@ def aufg3():
 	plt.plot(xx,f(xx),'rx',markersize=10,label=r'$f(x)$')
 	plt.plot(xx,f_alg(xx),'k--',label=r'vereinfacht $f(x) = g(x) = 2/3$')
 	plt.plot(xx,g(xx),'bo',label=r'$g(x)$')
+	plt.rcParams.update({'font.size': 22})
 	plt.xlabel(r'x')
 	plt.ylabel(r'Wert der Funktion')
 	plt.xscale('log')

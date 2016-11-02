@@ -1,0 +1,5 @@
+PWD /home/helena/Schreibtisch/SMD_WS_1617
+INPUT /home/helena/.local/texlive/2014/texmf-var/web2c/luatex/lualatex.fmt
+INPUT ./main.tex
+OUTPUT build/main.log
+INPUT /home/helena/.local/texlive/2014/texmf-dist/tex/latex/latexconfig/lualatexquotejobname.lua
