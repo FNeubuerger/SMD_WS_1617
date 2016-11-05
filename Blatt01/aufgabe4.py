@@ -1,100 +1,61 @@
 import numpy as np 
 import matplotlib.pyplot as plt 
-
+from matplotlib.patches import Ellipse
+import matplotlib as matplotlib
+import numpy.random as rnd
 plt.style.use('ggplot')
 plt.rcParams['text.usetex'] = True
 plt.rcParams['text.latex.unicode'] = True
 plt.rcParams['font.family'] = 'lmodern'
 def aufg4():
 
+	rho = 0.8
+	sigma_1 = 3.5
+	sigma_2 = 1.5
+	k = 4.2
+	alpha = 1/2*np.arctan(2*rho*sigma_1*sigma_2/(sigma_1**2-sigma_2**2))
+	mean = [4, 2]
+	cov = [[sigma_1**2, k], [sigma_2**2, k]] 
+	fig = plt.figure(0)
+	x, y = np.random.multivariate_normal(mean, cov, 700).T
+	a_1=4
+	a_2=2
+	u_1 = (x-a_1)/sigma_1
+	u_2 = (x-a_2)/sigma_2
+	print(a_1,a_2)
 	
-	#############################
-	#####Definiere Konstanten####
-	#############################
+	p_1 = (1-rho**2)*2*(np.cos(alpha)**2/sigma_1**2-2*rho*np.sin(alpha)*np.cos(alpha)/sigma_1*sigma_2+np.sin(alpha)**2/sigma_2**2)**(-1)
 
-
-	a = 1/137
-	E_e = 50e9
-	m_e = 511e3
-	s=(2*E_e)**2
-	gamma = E_e/m_e
-	b = np.sqrt(1-gamma**-2)
+	p_2 = (1-rho**2)*2*(np.sin(alpha)**2/sigma_1**2-2*rho*np.sin(alpha)*np.cos(alpha)/sigma_1*sigma_2+np.cos(alpha)**2/sigma_2**2)**(-1)
 	
-	#############################
-	#####Definiere Funktionen####
-	#############################
+	print(p_1,p_2)
 
-
-	#usrpüngliche Funktion
-	def f(x):
-		return ((a**2)/s)*(2+(np.sin(x))**2)/(1-(b**2)*(np.cos(x))**2)
+	#ells = [matplotlib.patches.Ellipse((a_1*a_2), width=p_1, height=p_2, angle=alpha, color='k')]
+	plt.plot(x, y, 'x')
 	
-	#Funktion nach Umformung
-	def g(x):
-		return ((a**2)/s)*(2+(np.sin(x))**2)/((1/(gamma**2)+b**2*np.sin(x)**2))
-
-	#Gleichung Konditionszahl der Funktion nach der Umformung
-	def kond(x):
-		return ((4*a**2*gamma**2*(-2*gamma**2+3)*np.sin(2*x))/(s*(-gamma**2*np.cos(2*x)+gamma**2+np.cos(2*x)+1)**2))*x
-	
-
-	##########################
-	#####Plotte Funktionen####
-	##########################
-
-
-	xx = np.pi*(np.arange(1000,dtype=float) + 1)*2*10**(-11)
-	yy = np.linspace(0, np.pi, 50)
-	zz = np.arange(0, np.pi, 0.000001)
-
-
-	fig = plt.figure(figsize=(12,8))
-	plt.plot(xx,f(xx),'r.',markersize=10,label=r'$\frac{d\sigma}{d\Omega}$', alpha=0.5)
-	plt.xlabel(r'$\theta$')
-	plt.ylabel(r'$\frac{d\sigma}{d\Omega}$')
-	plt.rcParams.update({'font.size': 22})
-	plt.legend(loc='best')
-	plt.tight_layout()
-	plt.savefig("plot4_c1.png")
 	#plt.show()
+	plt.axes()
+	#plt.figure()
+	ax = plt.gca()
+
+	ellipse = Ellipse(xy=(a_1, a_2), width=p_1, height=p_2,angle=np.rad2deg(alpha),edgecolor='k', fc='None')#, lw=2)
+	ellipse_2 = Ellipse(xy=(a_1, a_2), width=p_1*1/np.sqrt(np.e), height=p_2*1/np.sqrt(np.e),angle=np.rad2deg(alpha),edgecolor='g', fc='None')#, lw=2)
+	plt.gca().add_patch(ellipse)
+	plt.gca().add_patch(ellipse_2)
+	errX = sigma_1+a_1
+	errY = sigma_2+a_2
+	plt.errorbar(a_1 , a_2 , xerr=errY, yerr=errY, fmt='x')
+	plt.xlim(-16,16)
+	plt.ylim(-11,11)
+	plt.show()
 
 
-	fig = plt.figure(figsize=(12,8))
-	plt.plot(xx,g(xx),'b.',markersize=10,label=r'$\frac{d\sigma}{d\Omega}_{neu}$' ,alpha=0.5)	
-	plt.xlabel(r'$\theta$')
-	plt.ylabel(r'diff. Wirkungsquerschnitt')
-	plt.legend(loc='best')
-	plt.tight_layout()
-	plt.savefig("plot4_c2.png")
-	#plt.show()
-	
 
-
-	fig = plt.figure(figsize=(12,8))
-	plt.plot(zz,abs(kond(zz)),'bx',markersize=10,label=r'Konditionszahl')
-	plt.xlabel(r'$\theta$')
-	plt.ylabel(r'Konditionszahl')
-	plt.xlim(0, 1.1*np.pi)
-	plt.legend(loc='best')
-	plt.tight_layout()
-	plt.savefig("plot4_e.png")
-	#plt.show()
-	plt.clf()
-
-
-	fig = plt.figure(figsize=(12,8))
-	plt.plot(zz,abs(kond(zz)),'bx',markersize=10,label=r'Konditionszahl')
-	plt.xlabel(r'$\theta$')
-	plt.ylabel(r'Konditionszahl')
-	plt.xlim(0, 1.1*np.pi)
-	plt.yscale('log')
-	plt.legend(loc='best')
-	plt.tight_layout()
-	plt.savefig("plot4_elog.png")
-	#plt.show()
-	plt.clf()
 
 
 
 if __name__ == '__main__':
 	aufg4()
+
+
+
