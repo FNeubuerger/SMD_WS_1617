@@ -6,29 +6,68 @@ f(v)=N\left(\frac{m}{2\pi k_BT}\right)^\frac{3}{2}\exp{\left(-\frac{mv²}{2k_bT}
 \end{equation}
 
 Die Normalisierungkonstante berechnet sich mit Hilfe von
+\begin{equation*}
+\int_{0}^\infty f(v)\text{d}v=1.
+\end{equation*}
 
-\begin{equation}
-\int_{-\infty}^\infty f(v)\text{d}v=1.
-\end{equation}
+\begin{align*}
+\int_{0}^\infty f(v)\text{d}v= \alpha\int_{0}^\infty v²e^{-\beta v²}\text{d}v = \frac{\sqrt{\pi\alpha}}{2\beta^\frac{3}{2}}=
+\sqrt{\pi^3} 2  N \sqrt{\pi^{-3}}\left(\frac{m}{2\pi k_B T}\right)^\frac{3}{2}\left(\frac{2k_B T}{m}\right)^\frac{3}{2}=N=1
+\end{align*}
+
 
 \begin{itemize}
-\item[a)] Die wahrscheinlichste Geschwindigkeit ist gegeben durch
-\begin{equation}
-\frac{\text{d}f(v)}{\text{d}v}=0.
-\end{equation}
+\item[a)] Die wahrscheinlichste Geschwindigkeit ist gegeben durch $\sfrac{\text{d}f(v)}{\text{d}v}=0$.
+\begin{align*}
+\frac{\text{d}f(v)}{\text{d}v}=\alpha\frac{\text{d}}{\text{d}v}\left(e^{-\beta v²}\right)=&\alpha\left(2ve^{-\beta v²}-v³\beta e^{-\beta v²}\right)=2\alpha e^{-\beta v²}\left(v-v³\beta\right)=0\\
+2\alpha v - 2\alpha v³ \beta =& 0\\
+1 =& v²\beta\\
+\frac{1}{\beta}=&v²\\
+v=&\sqrt{\frac{2k_BT}{m}}
+\end{align*}
 
-\item[b)] Die mittlere Geschwindigkeit ist 
 
-\begin{equation}
-\bar{v}=\int_{-\infty}^\infty v\cdot f(v)\text{d}v.
-\end{equation}
+
+\item[b)] Die mittlere Geschwindigkeit wird mit Hilfe der Substitution:$ v² = x, 2v\text{d}v = \text{d}x$ berechnet. 
+
+\begin{align*}
+\langle v\rangle=&\int_{0}^\infty v\cdot f(v)\text{d}v=\alpha \int_{0}^\infty v³e^{-\beta v²}\text{d}v=\frac{\alpha}{2} \int_{0}^\infty x e^{-\beta x}\text{d}x\\
+= &\frac{\alpha}{2}\beta^{-2} = \frac{8N\pi {k_B}² T²}{m²}\left(\frac{m³}{2³\pi³{k_B}³T³}\right)^{\frac{1}{2}} = \sqrt{\frac{8k_B T}{\pi m}}
+\end{align*}
 
 
 
 \item[c)]
-\item[d)]
-\item[e)]
+\item[d)] 
+\begin{align*}
+ \frac{1}{2}\sqrt{\frac{2k_BT}{m}} =&\frac{4}{\pi}\left(\frac{m}{k_BT}\right)^\frac{3}{2}e^{-\beta v²} \\\\
+\frac{\sqrt{2\pi}}{8}\left(\frac{k_BT}{m}\right)² =& e^{-\beta v²}\\\\
+\sqrt{\frac{\pi}{512}}{v_m}⁴ =& e^{-\beta v²}\\\\
+-\ln{\left(\sqrt{\frac{\pi}{512}}{v_m}⁴\right)}\frac{2k_BT}{m}=&v²
+\end{align*}
+Die volle Breite auf halber Höhe ist gegeben durch
+\begin{align*}
+v_{FWHM}=\pm\sqrt{-\ln{\left(\sqrt{\frac{\pi}{512}}{v_m}⁴\right)}v²}.
+\end{align*}
+\item[e)] Die Standardabweichung ist
+
+\begin{equation*}
+\sigma_v=\langle v²\rangle-\langle v\rangle².
+\end{equation*}
+
+\begin{align*}
+\langle v²\rangle=\int_{0}^\infty f(v)v²\text{d}v = \frac{2}{\sqrt{\pi}}\left(\frac{m}{2k_BT}\right)^{-1}\sqrt{\pi}\frac{13}{22} = \frac{3}{2}{v_m}²
+\end{align*}
+\begin{align*}
+\sigma_v = \frac{3k_BT}{m} - \frac{8k_BT}{\pi m}={v_m}²\left(\frac{3}{2}-\frac{4}{\pi}\right)
+\end{align*}
+
+
+
+
 \end{itemize}
+
+
 \section*{Aufgabe 3: \emph{Würfel}}
 \begin{itemize}
 \item[a)] Die Summe der Punkte ergibt $9$. 
@@ -98,7 +137,75 @@ P(W_{\text{r}} = 4|W_{\text{r}} = 4) + P(W_{\text{b}} = 5|W_{\text{r}} = 4)\\
 \end{equation}
 zu $\rho(x,y)=0.8.$
 
-\item[b)] Helena schreibt auf. Siehe Vorlesung.
+\item[b)] 
+\begin{align*}
+\Phi(u_1,u_2) =& ke^{-\frac{1}{2}(u_1,u_2)B
+\begin{pmatrix}
+ u_1\\
+ u_2
+\end{pmatrix}
+}\\
+-\frac{1}{2}(u_1,u_2)B
+\begin{pmatrix}
+ u_1\\
+ u_2
+\end{pmatrix}
+= &\text{konst.}
+\end{align*}
 
+\begin{align*}
+-&\frac{1}{2}(u_1,u_2)
+\frac{1}{{\sigma_1}²{\sigma_2}²-{cov_x}²}
+\begin{pmatrix}
+{\sigma_2}^2 & -cov_x\\
+-cov_x &{\sigma_1}^2 
+\end{pmatrix}
+\begin{pmatrix}
+ u_1\\
+ u_2
+\end{pmatrix}
+\\=&-\frac{1}{2({\sigma_1}²{\sigma_2}²-{cov_x}²)}
+(u_1{\sigma_2}²-u_2cov_x-u_1cov_x+u_2{\sigma_1}²)
+\begin{pmatrix}
+ u_1\\
+ u_2
+\end{pmatrix}\\
+=&\frac{1}{2({\sigma_1}²{\sigma_2}²-{cov_x}²)}
+({u_1}²{\sigma_2}²-2u_1u_2cov_x+{u_2}²{\sigma_1}²)\\
+=&\frac{1}{2(1-\rho²)}
+({u_1}²{\sigma_2}²-2u_1u_2cov_x+{u_2}²{\sigma_1}²)\\
+=&\frac{1}{2(1-\rho²)}
+({u_1}²-2u_1u_2\rho+{u_2})=\text{konst.}\\
+\end{align*}
+mit $\rho=\frac{cov_x}{\sigma_1\sigma_2}=\frac{cov(x_1,x_2)}{\sigma_1\sigma_2}.$
 
+Für $\frac{1}{2(1-\rho²)}({u_1}²-2u_1u_2\rho+{u_2}=1$ gilt die Ellipsengleichung
+\begin{align*}
+\frac{(x_1-a_1)²}{{\sigma_1}²}-2\rho\frac{(x_1-a_1)²}{{\sigma_1}²}\frac{(x_2-a_2)²}{{\sigma_2}²}+\frac{(x_2-a_2)²}{{\sigma_2}²}= 1-\rho²
+\end{align*}
+
+mit $u_i=\frac{(x_i-a_i)²}{{\sigma_i}²}$. 
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{plot_4b.png}
+\caption{.}
+\end{figure}
+
+\item[c)]
+$p_1=1.41$, $p_2=0.76$, $\alpha=\SI{0.349}{\radian}=\SI{22.02}{\degree}$.
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{plot_4c.png}
+\caption{.}
+\end{figure}
+\item[d)]
+\item[e)]
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{plot_4e.png}
+\caption{t.}
+\end{figure}
+\item[f)]
+\item[g)]
 \end{itemize}
