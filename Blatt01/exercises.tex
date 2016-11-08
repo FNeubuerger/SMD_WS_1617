@@ -68,6 +68,47 @@ v_{FWHM}=\pm\sqrt{-\ln{\left(\sqrt{\frac{\pi}{512}}{v_m}⁴\right)}v²}.
 \end{itemize}
 
 
+\section*{Aufgabe 2: \emph{Binning}}
+\begin{itemize} 
+\item[a)] Die Strukutur der Häufigkeitsverteilung wird in einem Histogramm mit niedrigen 
+Binning (Bin 5) nicht deutlich. 
+In den Histogrammen mit hohem Binning ($30$, $50$) sind an mehreren Stellen einzelne Peaks.
+Für die Verteilungsfunktion bei Größe und Gewicht kann man auf eine solche
+genaue Betrachtung allerdings verzichten.
+Ein Histogramm mit mittlerer Binning Zahl reicht aus um die Verteilungsfunktion abzuleiten und ist übersichtlich, also ist das Binning mit $15$ Bins sinnvoll.
+
+\item[b)] Verwendet man weit mehr Daten als die vorgegeben 250, so sollte sich nicht grundlegend die
+Struktur der abgebildeten Verteilungsfunktion ändern.
+Die Bin-Breite sollte zumindest so gewählt werden, dass mehrere Punkte gruppiert werden. Als minimale Bin-Breite kann also für Gewicht 1 - 5 kg gewählt werden, da die Datensätze auf \SI{0.01}{\kilogram} genau angegeben sind.\\
+Bei der Größenverteilung sind die Daten
+auf \SI{0.01}{\metre} genau angegeben, daher ist eine sinnvolle minimale Bin-Breite \SI{0.05}{\metre}. 
+%Der Höchstwert der Gewichtsverteilung ist das 100-fache der minimalen Differenz zweier Werte. Bei der Größenverteilung das 5-fache. Allerdings hat die Groessenverteilung lediglich ein Spektrum von 50 moeglichen Werten (1.50 - 2.00), die Gewichtsverteilung dagegen wesentlich mehr.	
+
+\item[c)]
+Die Histogramme zeigen mit steigenem Binning (5, 10, 15, 20) deutlich,
+dass die relative Höhendifferenz zweier Bins mit steigenden Werten ebenfalls zunimmt (exponentiell).
+Bei den hohen Binnings (30, 50) wird dieser gleichbleibende Trend jedoch von einzelnen Bins unterbrochen.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{GroessenverteilungBinnings2x3.png}
+\caption{Histogramme der Größenverteilung mit verschiedenen Binnings.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{GewichtsverteilungBinnings2x3.png}
+\caption{Histogramme der Gewichtsverteilung mit verschiedenen Binnings.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Log_ZufallszahlenverteilungBinnings2x3.png}
+\caption{Logarithmierte Zufallszahlen zwischen $1$ und $100$ mit verschiedenen Binnings.}
+\end{figure}
+
+\end{itemize}
+
 \section*{Aufgabe 3: \emph{Würfel}}
 \begin{itemize}
 \item[a)] Die Summe der Punkte ergibt $9$. 
