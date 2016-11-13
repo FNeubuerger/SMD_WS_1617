@@ -6,7 +6,7 @@ plt.style.use('ggplot')
 plt.rcParams['text.usetex'] = True
 plt.rcParams['text.latex.unicode'] = True
 plt.rcParams['font.family'] = 'lmodern'
-
+#a)
 def rd_lk(a,b,m,seed=0):
 	x_a = seed #whatever seed value default 0
 	arr = [] #empty list for storage
@@ -30,7 +30,7 @@ def ntupel(L,n):
 
 
 def aufg2():
-	#a)
+	#b)
 	a = rd_lk(a=1601,b=3456,m=10000)
 	#b = rd_lk(a=1601,b=3456,m=10000,seed=50) #unterscheidet sich nur wenn seed nicht in voherigem array enthalten
 	#print(a)
@@ -42,9 +42,8 @@ def aufg2():
 	#plt.savefig('rd_lk_2.png',dpi=300)
 	#plt.show()
 	plt.clf()
-	#b)
 	test = [0,4,2,6,4,8,6,10,8,9,10,11,12,13,14]
-
+	#c)
 	pairs = ntupel(a,2) #pair(a)
 	triplel = ntupel(a,3) # triple(a)
 	
@@ -71,11 +70,38 @@ def aufg2():
 	#plt.show()
 	plt.clf()
 
-	#c)
-	c = np.zeros(10000)
-	random = R.TRandom
-	d = random.Rndm(random)
+	#d)
 
-	print(random)
+	d = np.zeros(10000)
+	myGen = R.TRandom()
+	root_random = myGen.RndmArray(10000,c)
+	print(root_random)
+
+	#e)
+	root_pairs = ntupel(root_random,2)
+
+	root_triple = ntupel(root_random,3)
+
+	fig = plt.figure()
+	ax1 = fig.add_subplot(111,projection='3d')
+	#x , y , z = np.random.normal(size=(3,1000))
+	x , y , z = zip(*root_triple)
+	
+	
+	ax1.scatter(x,y,z, lw=0)
+	#ax1.init_view(45, 30)
+	plt.savefig('3dscatter_root.png',dpi=300)
+	#plt.show()
+	plt.clf()
+
+	fig = plt.figure(figsize=(16,9))
+	X,Y = zip(*root_pairs)
+	plt.scatter(X,Y)
+	plt.savefig('2dscatter_root.png',dpi=300)
+	#plt.show()
+	plt.clf()
+	#f) nur wenn seed/m = 0.5 
+
+
 if __name__ == '__main__':
 	aufg2()
