@@ -72,9 +72,9 @@ def aufg2():
 
 	#d)
 
-	d = np.zeros(10000)
+	root_random = np.zeros(10000)
 	myGen = R.TRandom()
-	root_random = myGen.RndmArray(10000,c)
+	myGen.RndmArray(10000,root_random)
 	print(root_random)
 
 	#e)
