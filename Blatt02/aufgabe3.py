@@ -40,8 +40,8 @@ weights =data['hist'])
 
 	xmin, xmax = min(data['bin_mid']), max(data['bin_mid'])  
 	lnspc = np.linspace(xmin, xmax, len(data['bin_mid']))
-	m = np.mean(data['hist'])
-	s = np.std(data['hist'])
+	m = np.mean(data['bin_mid'])
+	s = np.std(data['bin_mid'])
 	print(m,s)
 	pdf_g = stats.norm.pdf(lnspc, m, s) # now get theoretical 	values in our interval  
 	
