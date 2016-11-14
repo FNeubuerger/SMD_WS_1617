@@ -82,6 +82,14 @@ def aufg2():
 
 	root_triple = ntupel(root_random,3)
 
+	fig = plt.figure(figsize=(16,9))
+	plt.hist(root_random,bins=100,rasterized=True,color='red' ,alpha=0.5)
+	plt.xlabel(r'random number value')
+	plt.ylabel(r'n')
+	plt.savefig('1dhist_root.png',dpi=300)
+	#plt.show()
+	plt.clf()
+
 	fig = plt.figure()
 	ax1 = fig.add_subplot(111,projection='3d')
 	#x , y , z = np.random.normal(size=(3,1000))
@@ -100,7 +108,7 @@ def aufg2():
 	plt.savefig('2dscatter_root.png',dpi=300)
 	#plt.show()
 	plt.clf()
-	#f) nur wenn seed/m = 0.5 
+	#f) ja wenn x=1144 + 10000k  
 
 
 if __name__ == '__main__':
