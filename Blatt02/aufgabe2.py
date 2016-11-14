@@ -19,7 +19,7 @@ def rd_lk(a,b,m,seed=0):
 	return arr #returns array of normed random numbers 
 
 def pair(L):
-	return [(L[i],L[i+1])  for i in range(len(L)-1)] #[for j in range(steps-1)]
+	return [(L[i],L[i+1]) for i in range(len(L)-1)] #[for j in range(steps-1)]
 
 def triple(L):
 	return [(L[i],L[i+1],L[i+2])  for i in range(len(L)-2)]
@@ -58,7 +58,7 @@ def aufg2():
 	
 	
 	ax1.scatter(x,y,z, lw=0)
-	#ax1.init_view(45, 30)
+	ax1.view_init(45, 45)
 	plt.savefig('3dscatter.png',dpi=300)
 	#plt.show()
 	plt.clf()
@@ -89,7 +89,7 @@ def aufg2():
 	
 	
 	ax1.scatter(x,y,z, lw=0)
-	#ax1.init_view(45, 30)
+	ax1.view_init(45, 45)
 	plt.savefig('3dscatter_root.png',dpi=300)
 	#plt.show()
 	plt.clf()

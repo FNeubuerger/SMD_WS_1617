@@ -3,8 +3,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 def aufg4():
 #b)
+	rho = -0.8
 	mean = [1,1]
-	cov = [[0.2**2,-0.4],[-0.4,0.2**2]]
+	sigma_x = 0.2
+	sigma_y = 0.2
+	cov_xy = rho*sigma_y*sigma_x
+	cov = [[sigma_x**2 , -cov_xy],[-cov_xy, sigma_y**2]]
 	a0 = np.random.multivariate_normal(mean=mean,cov=cov,size=5000).T
 	a1 = np.random.multivariate_normal(mean=mean,cov=cov,size=5000).T
 
@@ -14,7 +18,7 @@ def aufg4():
 	plt.scatter(a0,a1)
 	plt.xlabel(r'$a_0$')
 	plt.ylabel(r'$a_1$')
-	#plt.show()
+	plt.show()
 	plt.close()
 	def numerical(m,x,b):
 		return m*x+b
