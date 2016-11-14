@@ -1,256 +1,74 @@
  
 \section*{Aufgabe 1: \emph{Maxwell'sche Geschwindigkeitsverteilung}}
 
+
+\section*{Aufgabe 2: \emph{Zufallszahlengeneratoren}}
+
+Zufallszahlengenerator mit
 \begin{equation}
-f(v)=N\left(\frac{m}{2\pi k_BT}\right)^\frac{3}{2}\exp{\left(-\frac{mv²}{2k_bT}\right)}\cdot4\pi v²
+x_n=(ax_{n-1}+b) \text{mod}m.
 \end{equation}
 
-Die Normalisierungkonstante berechnet sich mit Hilfe von
-\begin{equation*}
-\int_{0}^\infty f(v)\text{d}v=1.
-\end{equation*}
-
-\begin{align*}
-\int_{0}^\infty f(v)\text{d}v= \alpha\int_{0}^\infty v²e^{-\beta v²}\text{d}v = \frac{\sqrt{\pi\alpha}}{2\beta^\frac{3}{2}}=
-\sqrt{\pi^3} 2  N \sqrt{\pi^{-3}}\left(\frac{m}{2\pi k_B T}\right)^\frac{3}{2}\left(\frac{2k_B T}{m}\right)^\frac{3}{2}=N=1
-\end{align*}
-
-
 \begin{itemize}
-\item[a)] Die wahrscheinlichste Geschwindigkeit ist gegeben durch $\sfrac{\text{d}f(v)}{\text{d}v}=0$.
-\begin{align*}
-\frac{\text{d}f(v)}{\text{d}v}=\alpha\frac{\text{d}}{\text{d}v}\left(e^{-\beta v²}\right)=&\alpha\left(2ve^{-\beta v²}-v³\beta e^{-\beta v²}\right)=2\alpha e^{-\beta v²}\left(v-v³\beta\right)=0\\
-2\alpha v - 2\alpha v³ \beta =& 0\\
-1 =& v²\beta\\
-\frac{1}{\beta}=&v²\\
-v=&\sqrt{\frac{2k_BT}{m}}
-\end{align*}
 
 
+\item[a)] $a=1601$, $b=3456$, $m=10000$.
+\item[b)] Das Ergebnis hängt nur vom Startwert ab, wenn dieser nicht in dem vorherigen Array (was ist damit gemeint?) enthalten ist.
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{linear_kongruent_random_numbers.png}
+\caption{$10000$ Zufallszahlen, erzeugt mit dem in Aufgabenteil a) programmierten Zufallszahlengenerator.}
+\label{fig:2b}
+\end{figure}
+\item[c)] In den Histogrammen sind eindeutig Strukturen (Linien oder Ebenen) zu erkennen. Dies deutet darauf hin, dass Zahlen von den vorher generierten Zahlen abhängen und nicht komplett gleichverteilt sind.
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{2dscatter.png}
+\caption{Paare von Zufallszahlen, dargestellt als zweidimensionales Histogramm.}
+\label{fig:2c1}
+\end{figure}
 
-\item[b)] Die mittlere Geschwindigkeit wird mit Hilfe der Substitution:$ v² = x, 2v\text{d}v = \text{d}x$ berechnet. 
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{3dscatter.png}
+\caption{Tripel von Zufallszahlen, dargestellt als zweidimensionales Histogramm.}
+\label{fig:2c2}
+\end{figure}
+\item[d)]
 
-\begin{align*}
-\langle v\rangle=&\int_{0}^\infty v\cdot f(v)\text{d}v=\alpha \int_{0}^\infty v³e^{-\beta v²}\text{d}v=\frac{\alpha}{2} \int_{0}^\infty x e^{-\beta x}\text{d}x\\
-= &\frac{\alpha}{2}\beta^{-2} = \frac{8N\pi {k_B}² T²}{m²}\left(\frac{m³}{2³\pi³{k_B}³T³}\right)^{\frac{1}{2}} = \sqrt{\frac{8k_B T}{\pi m}}
-\end{align*}
+\item[e)] 
 
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{2dscatter_root.png}
+\caption{Tripel von Zufallszahlen, dargestellt als zweidimensionales Histogramm. Im Gegensatz zu dem vorherigen zweidimensionalen Histogramm lässt sich hier keine Struktur erkennen.}
+\label{fig:2e1}
+\end{figure}
 
-
-\item[c)] nicht bearbeitet
-\item[d)] 
-\begin{align*}
- \frac{1}{2}\sqrt{\frac{2k_BT}{m}} =&\frac{4}{\pi}\left(\frac{m}{k_BT}\right)^\frac{3}{2}e^{-\beta v²} \\\\
-\frac{\sqrt{2\pi}}{8}\left(\frac{k_BT}{m}\right)² =& e^{-\beta v²}\\\\
-\sqrt{\frac{\pi}{512}}{v_m}⁴ =& e^{-\beta v²}\\\\
--\ln{\left(\sqrt{\frac{\pi}{512}}{v_m}⁴\right)}\frac{2k_BT}{m}=&v²
-\end{align*}
-Die volle Breite auf halber Höhe ist gegeben durch
-\begin{align*}
-v_{FWHM}=\pm\sqrt{-\ln{\left(\sqrt{\frac{\pi}{512}}{v_m}⁴\right)}v²}.
-\end{align*}
-\item[e)] Die Standardabweichung ist
-
-\begin{equation*}
-\sigma_v=\langle v²\rangle-\langle v\rangle².
-\end{equation*}
-
-\begin{align*}
-\langle v²\rangle=\int_{0}^\infty f(v)v²\text{d}v = \frac{2}{\sqrt{\pi}}\left(\frac{m}{2k_BT}\right)^{-1}\sqrt{\pi}\frac{13}{22} = \frac{3}{2}{v_m}²
-\end{align*}
-\begin{align*}
-\sigma_v = \frac{3k_BT}{m} - \frac{8k_BT}{\pi m}={v_m}²\left(\frac{3}{2}-\frac{4}{\pi}\right)
-\end{align*}
-
-
-
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{3dscatter_root.png}
+\caption{Tripel von Zufallszahlen, dargestellt als dreidimensionales Histgramm.Im Gegensatz zu dem vorherigen dreidimensionalen Histogramm lassen sich hier keine Ebenen erkennen.}
+\label{fig:2e2}
+\end{figure}
+\item[f)] Nur, wenn seed/m = 0.5.
 
 \end{itemize}
 
+\section*{Aufgabe 3: \emph{Zufallszahlengeneratoren}}
 
-\section*{Aufgabe 2: \emph{Binning}}
-\begin{itemize} 
-\item[a)] Die Strukutur der Häufigkeitsverteilung wird in einem Histogramm mit niedrigen 
-Binning (Bin 5) nicht deutlich. 
-In den Histogrammen mit hohem Binning ($30$, $50$) sind an mehreren Stellen einzelne Peaks.
-Für die Verteilungsfunktion bei Größe und Gewicht kann man auf eine solche
-genaue Betrachtung allerdings verzichten.
-Ein Histogramm mit mittlerer Binning Zahl reicht aus um die Verteilungsfunktion abzuleiten und ist übersichtlich, also ist das Binning mit $15$ Bins sinnvoll.
 
-\item[b)] Verwendet man weit mehr Daten als die vorgegeben 250, so sollte sich nicht grundlegend die
-Struktur der abgebildeten Verteilungsfunktion ändern.
-Die Bin-Breite sollte zumindest so gewählt werden, dass mehrere Punkte gruppiert werden. Als minimale Bin-Breite kann also für Gewicht 1 - 5 kg gewählt werden, da die Datensätze auf \SI{0.01}{\kilogram} genau angegeben sind.\\
-Bei der Größenverteilung sind die Daten
-auf \SI{0.01}{\metre} genau angegeben, daher ist eine sinnvolle minimale Bin-Breite \SI{0.05}{\metre}. 
-%Der Höchstwert der Gewichtsverteilung ist das 100-fache der minimalen Differenz zweier Werte. Bei der Größenverteilung das 5-fache. Allerdings hat die Groessenverteilung lediglich ein Spektrum von 50 moeglichen Werten (1.50 - 2.00), die Gewichtsverteilung dagegen wesentlich mehr.	
-
-\item[c)]
-Die Histogramme zeigen mit steigenem Binning (5, 10, 15, 20) deutlich,
-dass die relative Höhendifferenz zweier Bins mit steigenden Werten ebenfalls zunimmt (exponentiell).
-Bei den hohen Binnings (30, 50) wird dieser gleichbleibende Trend jedoch von einzelnen Bins unterbrochen.
-
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{GroessenverteilungBinnings2x3.png}
-\caption{Histogramme der Größenverteilung mit verschiedenen Binnings.}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{GewichtsverteilungBinnings2x3.png}
-\caption{Histogramme der Gewichtsverteilung mit verschiedenen Binnings.}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{Log_ZufallszahlenverteilungBinnings2x3.png}
-\caption{Logarithmierte Zufallszahlen zwischen $1$ und $100$ mit verschiedenen Binnings.}
-\end{figure}
-
-\end{itemize}
-
-\section*{Aufgabe 3: \emph{Würfel}}
+\section*{Aufgabe 4: \emph{Fehlerfortpflanzung}}
 \begin{itemize}
-\item[a)] Die Summe der Punkte ergibt $9$. 
-\begin{align*}
-P(W_{\text{r}} + W_{\text{b}} = 9) \\
- = 2P(9|W_{\text{r,b}} = 3 ) \\
- + 2P(9|W_{\text{r,b}} = 4 ) \\
- + 2P(9|W_{\text{r,b}} = 5 ) \\
- + 2P(9|W_{\text{r,b}} = 6 ) \\
- = 2/36 + 2/36 + 2/36 + 2/36 \\
- = 1/6
-\end{align*}
 
-\item[b)] Die Summe der Punkte ist $9$ oder mehr.
-\begin{align*}
-P(W_{\text{r}} + W_{\text{b}} > 9) \\
- = 2P(9|W_{\text{r,b}} = 4 ) \\
- + 2P(9|W_{\text{r,b}} = 5 ) \\
- + 2P(9|W_{\text{r,b}} = 6 ) \\
- = 2 \cdot 1/6 \cdot 1/6 + 2 \cdot 1/6 \cdot 1/3 + 2 \cdot 1/6 \cdot 1/2 \\
- = 1/3
-\end{align*}
+\item[a)]
 
-\item[c)] Die Wahrscheinlichkeit, dass ein Würfel $4$, der andere $5$ Punkte zeigt.
-\begin{align*}
-P(W_{\text{r,b}} = 5 \land W_{\text{r,b}}=4)\\
-= 2P(W_{\text{r,b}} = 5) + 2P(W_{\text{r,b}} = 4)\\
-= 2/3
-\end{align*}
-
-\item[d)] Die Wahrscheinlichkeit, dass der rote Würfel $4$ und 
-der blaue $5$ Punkte zeigt.
-
-\begin{align*}
-P(W_{\text{r}} = 4 \land W_{\text{b}}=5)\\
-= 1/3
-\end{align*}
-
-\item[e)] Die Summe der Punkte ist $9$ unter der Bedingung, dass der rote Würfel eine $4$ zeigt.
-\begin{align*}
-P(W_{\text{r}} + W_{\text{b}} = 9|W_{\text{r}} = 4)
-= 1/6
-\end{align*}
-
-
-\item[f)] Die Summe der Punkte ist $9$ oder mehr unter der Bedingung, dass der rote Würfel eine $4$ zeigt.
-\begin{align*}
-P(W_{\text{r}} + W_{\text{b}} > 9|W_{\text{r}} = 4)
-= P(W_{\text{b}} = 6|W_{\text{r}} = 4) + P(W_{\text{b}} = 5|W_{\text{r}} = 4)\\
-= 1/6 + 1/6 = 2/3 
-\end{align*}
-
-
-\item[g)]Die Wahrscheinlichkeit, dass der rote Würfel $4$ und der blaue $5$ Punkte zeigt.
-\begin{align*}
-P(W_{\text{r}} = 4|W_{\text{r}} = 4) + P(W_{\text{b}} = 5|W_{\text{r}} = 4)\\
-=1/6
-\end{align*}
-\end{itemize}
-
-\section*{Aufgabe 4: \emph{Zweidimensionale Gaußverteilung}}
-
-\begin{itemize}
-\item[a)] Der Korellationskoeffizient berechnet sich mit
-\begin{equation}
-\rho(x,y)=\frac{\text{Cov}(x,y)}{\sigma_x\cdot\sigma_y}
-\end{equation}
-zu $\rho(x,y)=0.8.$
-
-\item[b)] Siehe Abbildung \ref{fig:b}.
-\begin{align*}
-\Phi(u_1,u_2) =& ke^{-\frac{1}{2}(u_1,u_2)B
-\begin{pmatrix}
- u_1\\
- u_2
-\end{pmatrix}
-}\\
--\frac{1}{2}(u_1,u_2)B
-\begin{pmatrix}
- u_1\\
- u_2
-\end{pmatrix}
-= &\text{konst.}
-\end{align*}
-
-\begin{align*}
--&\frac{1}{2}(u_1,u_2)
-\frac{1}{{\sigma_1}²{\sigma_2}²-{cov_x}²}
-\begin{pmatrix}
-{\sigma_2}^2 & -cov_x\\
--cov_x &{\sigma_1}^2 
-\end{pmatrix}
-\begin{pmatrix}
- u_1\\
- u_2
-\end{pmatrix}
-\\=&-\frac{1}{2({\sigma_1}²{\sigma_2}²-{cov_x}²)}
-(u_1{\sigma_2}²-u_2cov_x-u_1cov_x+u_2{\sigma_1}²)
-\begin{pmatrix}
- u_1\\
- u_2
-\end{pmatrix}\\
-=&\frac{1}{2({\sigma_1}²{\sigma_2}²-{cov_x}²)}
-({u_1}²{\sigma_2}²-2u_1u_2cov_x+{u_2}²{\sigma_1}²)\\
-=&\frac{1}{2(1-\rho²)}
-({u_1}²{\sigma_2}²-2u_1u_2cov_x+{u_2}²{\sigma_1}²)\\
-=&\frac{1}{2(1-\rho²)}
-({u_1}²-2u_1u_2\rho+{u_2})=\text{konst.}\\
-\end{align*}
-mit $\rho=\frac{cov_x}{\sigma_1\sigma_2}=\frac{cov(x_1,x_2)}{\sigma_1\sigma_2}.$
-
-Für $\frac{1}{2(1-\rho²)}({u_1}²-2u_1u_2\rho+{u_2}=1$ gilt die Ellipsengleichung
-\begin{align*}
-\frac{(x_1-a_1)²}{{\sigma_1}²}-2\rho\frac{(x_1-a_1)²}{{\sigma_1}²}\frac{(x_2-a_2)²}{{\sigma_2}²}+\frac{(x_2-a_2)²}{{\sigma_2}²}= 1-\rho²
-\end{align*}
-
-mit $u_i=\frac{(x_i-a_i)²}{{\sigma_i}²}$. 
-
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{plot_4b.png}
-\caption{2-dimensionale Gaußverteilung mit $1\sigma$--Ellipse und Ellipse, bei der $f(x,y)$ auf das $\sfrac{1}{\sqrt{e}}$--fache des Maximums abgefallen ist.}
-\label{fig:b}
-\end{figure}
-
-\item[c)] Siehe Abbildung \ref{fig:c}.
-$p_1=1.41$, $p_2=0.76$, $\alpha=\SI{0.349}{\radian}=\SI{22.02}{\degree}$.
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{plot_4c.png}
-\caption{Abbildung einer 2--dimensionalen Gaußverteilung mit eingezeichneten Werten $\mu_x$,$\mu_y$,$\mu_x\pm\sigma_x$ und $\mu_y\pm\sigma_y$.}
-\label{fig:c}
-
-\end{figure}
-\item[d)] nicht bearbeitet
-\item[e)] Siehe Abbildung \ref{fig:e}.
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{plot_4e.png}
-\caption{Eingezeichnete Hauptachsen der $1\sigma$--Ellipse einer 2--dimensionalen Gaußverteilung.}
-\label{fig:e}
-\end{figure}
-\item[f)] nicht bearbeitet
-\item[g)] nicht bearbeitet
+\begin{align}
+y=a_0+a_1x\\
+a_0=a_1=1.0\pm0.2\\
+\rho = \frac{\text{cov}(a_0,a_1)}{\sigma(a_0)\sigma(a_1)}=-0.8\\
+\text{cov}(a_0,a_1)=\rho \sigma(a_0)\sigma(a_1)=-0.8\cdot 0.2\cdot 0.2 = 0.032\\
+\sigma_{y_1}=\sqrt{\left(\frac{\partial y}{\partial x}\sigma_x\right)²} = \sqrt{{a_1}²{\sigma_x}²}=0.2\\
+\sigma_{y_2}=\sqrt{\left(\frac{\partial y}{\partial x}\sigma_x\right)²+2\frac{\partial y}{\partial x}\text{cov}(a_0,a_1)}=\sqrt{{a_1}²{sigma_x}²+2a_1\text{cov}(a_0,a_1)}=\sqrt{0.2²+1\cdot 0.032}=0.3224
+\end{align}
 \end{itemize}
