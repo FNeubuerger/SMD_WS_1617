@@ -1,6 +1,11 @@
 import numpy as np
 #import pandas as pd
 import matplotlib.pyplot as plt
+plt.style.use('ggplot')
+plt.rcParams['text.usetex'] = True
+plt.rcParams['text.latex.unicode'] = True
+plt.rcParams['font.family'] = 'lmodern'
+
 def aufg4():
 #b)
 	rho = -0.8
@@ -17,6 +22,7 @@ def aufg4():
 	plt.scatter(a[:,0],a[:,1],rasterized=True)
 	plt.xlabel(r'$a_0$')
 	plt.ylabel(r'$a_1$')
+	plt.xlim(0,2)
 	plt.savefig('scatterplot_a0_a1.png',dpi=300)
 	plt.show()
 	plt.close()

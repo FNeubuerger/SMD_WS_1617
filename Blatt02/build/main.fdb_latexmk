@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1479203427 "main.tex" "build/main.pdf" "main" 1479203436
+["pdflatex"] 1479203862 "main.tex" "build/main.pdf" "main" 1479203872
   "../header.tex" 1478125415 2711 645726e5e69ee7c2362a3029f8e0d1c8 ""
   "/home/opiate/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/home/opiate/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -167,14 +167,14 @@
   "2dscatter_root.png" 1479134475 1433155 baab90b174097363a414e1788a08ac6b ""
   "3dscatter.png" 1479134468 208194 1f420d5c5649770586ae4ed7e3af0633 ""
   "3dscatter_root.png" 1479134474 676896 cb43b0d8184bdac0ee8ae7e9825c1628 ""
-  "build/main.aux" 1479203436 3755 b6b15c0ef5e2a6530f81b4067aecd04f ""
+  "build/main.aux" 1479203872 3755 b6b15c0ef5e2a6530f81b4067aecd04f ""
   "exercises.tex" 1479203425 4339 e9fa1f66dddf0b527a2d2c884375082b ""
   "linear_kongruent_random_numbers.png" 1479044368 81058 d5328a3b66dff227931791da26ae1e7c ""
   "main.tex" 1478509867 639 c48b3098396bc0f22e273950e7a72560 ""
-  "scatterplot_a0_a1.png" 1479142480 400670 2db18403e0961ed98c14537f196520a5 ""
+  "scatterplot_a0_a1.png" 1479203858 601964 b6a9b1e7600999f7f8801f22ce3b53a2 ""
   (generated)
   "build/main.pdf"
-  "/home/helena/.local/texlive/2014/texmf-var/m_t_x_t_e_s_t.tmp"
-  "/home/opiate/.local/texlive/2016/texmf-var/m_t_x_t_e_s_t.tmp"
-  "build/main.aux"
   "build/main.log"
+  "/home/opiate/.local/texlive/2016/texmf-var/m_t_x_t_e_s_t.tmp"
+  "/home/helena/.local/texlive/2014/texmf-var/m_t_x_t_e_s_t.tmp"
+  "build/main.aux"
