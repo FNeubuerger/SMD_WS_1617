@@ -29,17 +29,11 @@ def d(xmin,xmax,size):
 	return np.tan(uniform(0,1,size) - np.pi/2)
 
 def aufg3():
-<<<<<<< HEAD
-	#xmin = 0
-	#xmax = 5
-	#arr_a = a(xmin=xmin,xmax=xmax,size=10)
-	#print(a)
-	 I = quad(minmax, xmin,xmax)#, args=(a,b))
-=======
+
 	plt.hist(c(xmin=1,xmax=1000,n=5,size=10000),bins=25)
 	plt.show()
 
->>>>>>> 544d36a0509b71e73b12648869c9514af55daca5
+
 
 	
 
