@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1479243090 "main.tex" "build/main.pdf" "main" 1479248714
-  "../header.tex" 1478620410 2711 645726e5e69ee7c2362a3029f8e0d1c8 ""
+["pdflatex"] 1479243090 "main.tex" "build/main.pdf" "main" 1479248275
+  "../header.tex" 1478125415 2711 645726e5e69ee7c2362a3029f8e0d1c8 ""
   "/home/helena/.local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/home/helena/.local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "/home/helena/.local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
@@ -174,6 +174,7 @@
   "/home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1478639576 22751 f356f7b264cdd9b361fc7a659e85d057 ""
   "/home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/names/luaotfload-names.luc" 1465285256 670998 adbccbbbebabc6f2ba78e155b6c36414 ""
   "/home/helena/.local/texlive/2014/texmf-var/web2c/luatex/lualatex.fmt" 1413639403 676375 4f0dd0e5a5f161441d0cdeed183d18a3 ""
+<<<<<<< HEAD
   "1dhist_root.png" 1479242370 89224 1bcc336cc0e0d7a8e9f61ac4172814e7 ""
   "2dscatter.png" 1479129110 386756 5ce1e9a337c65a904bfa2b2c06d90735 ""
   "2dscatter_root.png" 1479129110 1433155 baab90b174097363a414e1788a08ac6b ""
@@ -192,3 +193,23 @@
   "build/main.pdf"
   "/home/helena/.local/texlive/2014/texmf-var/m_t_x_t_e_s_t.tmp"
   "build/main.aux"
+=======
+  "1dhist_root.png" 1479142480 89224 1bcc336cc0e0d7a8e9f61ac4172814e7 ""
+  "2dscatter.png" 1479134469 386756 5ce1e9a337c65a904bfa2b2c06d90735 ""
+  "2dscatter_root.png" 1479134475 1433155 baab90b174097363a414e1788a08ac6b ""
+  "3dscatter.png" 1479134468 208194 1f420d5c5649770586ae4ed7e3af0633 ""
+  "3dscatter_root.png" 1479134474 676896 cb43b0d8184bdac0ee8ae7e9825c1628 ""
+  "Binaer2zu3.png" 1479248250 11778 f25638bf15f79ab54cae010646c7dd07 ""
+  "Gleichvert1zu2.png" 1479248250 28781 4b4287828adca28949420eca5d642e74 ""
+  "build/main.aux" 1479248250 3978 622b886936df8a0237552f5a6e29b402 ""
+  "exercises.tex" 1479248250 6900 749e7a9ba498e430da7fc2c812d61fdb ""
+  "linear_kongruent_random_numbers.png" 1479044368 81058 d5328a3b66dff227931791da26ae1e7c ""
+  "main.tex" 1478509867 639 c48b3098396bc0f22e273950e7a72560 ""
+  "scatterplot_a0_a1.png" 1479248250 501180 6f59d8de3411a094e2632f37e8b4307a ""
+  (generated)
+  "/home/helena/.local/texlive/2014/texmf-var/m_t_x_t_e_s_t.tmp"
+  "build/main.pdf"
+  "build/main.aux"
+  "/home/opiate/.local/texlive/2016/texmf-var/m_t_x_t_e_s_t.tmp"
+  "build/main.log"
+>>>>>>> 8f5aec539ccfdee0a51c082e028f00def111884e
