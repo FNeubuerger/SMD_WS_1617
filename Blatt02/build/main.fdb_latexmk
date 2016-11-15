@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1479243090 "main.tex" "build/main.pdf" "main" 1479243112
+["pdflatex"] 1479243090 "main.tex" "build/main.pdf" "main" 1479248714
   "../header.tex" 1478620410 2711 645726e5e69ee7c2362a3029f8e0d1c8 ""
   "/home/helena/.local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/home/helena/.local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -182,13 +182,13 @@
   "Binaer2zu3.png" 1479234406 11778 f25638bf15f79ab54cae010646c7dd07 ""
   "Gleichvert1zu2.png" 1479234603 28781 4b4287828adca28949420eca5d642e74 ""
   "build/main.aux" 1479243111 3978 622b886936df8a0237552f5a6e29b402 ""
-  "exercises.tex" 1479242827 6900 749e7a9ba498e430da7fc2c812d61fdb ""
+  "exercises.tex" 1479248712 6900 749e7a9ba498e430da7fc2c812d61fdb ""
   "linear_kongruent_random_numbers.png" 1479044271 81058 d5328a3b66dff227931791da26ae1e7c ""
   "main.tex" 1479044271 639 c48b3098396bc0f22e273950e7a72560 ""
   "scatterplot_a0_a1.png" 1479243060 501180 6f59d8de3411a094e2632f37e8b4307a ""
   (generated)
   "/home/opiate/.local/texlive/2016/texmf-var/m_t_x_t_e_s_t.tmp"
-  "build/main.aux"
-  "/home/helena/.local/texlive/2014/texmf-var/m_t_x_t_e_s_t.tmp"
   "build/main.log"
   "build/main.pdf"
+  "/home/helena/.local/texlive/2014/texmf-var/m_t_x_t_e_s_t.tmp"
+  "build/main.aux"
