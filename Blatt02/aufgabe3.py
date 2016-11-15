@@ -18,13 +18,16 @@ def b(tau,size):
 	return -tau*np.log(1-uniform(0,1,size))
 
 def c(xmin,xmax,n,size):
-	return
+	if n <2 :
+		print('n must be larger or equal to than 2')
+		return 0
+	return ( uniform(0,1,size) * (xmax**(1-n) - xmin**(1-n)) +xmin**(1-n))**(n-1)
 
 def d(xmin,xmax,size):
-	return np.tan(a(xmin,xmax,size) - np.pi/2)
+	return np.tan(uniform(0,1,size) - np.pi/2)
 
 def aufg3():
-	plt.hist(d(xmin=-1,xmax=1,size=100),bins=25)
+	plt.hist(c(xmin=1,xmax=1000,n=5,size=10000),bins=25)
 	plt.show()
 
 
