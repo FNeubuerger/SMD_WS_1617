@@ -3,6 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt 
 from scipy.stats import cauchy
 from scipy import stats  
+from scipy.integrate import quad
+
 plt.style.use('ggplot')
 plt.rcParams['text.usetex'] = True
 plt.rcParams['text.latex.unicode'] = True
@@ -67,11 +69,13 @@ def b(N,tau,size):
 			return p
 
 def aufg3():
-	xmin = 0
-	xmax = 5
-	arr_a = a(xmin=xmin,xmax=xmax,n=1000)
-	print(a)
+	#xmin = 0
+	#xmax = 5
+	#arr_a = a(xmin=xmin,xmax=xmax,size=10)
+	#print(a)
+	 I = quad(minmax, xmin,xmax)#, args=(a,b))
 
+	
 
 if __name__ == '__main__':
 	aufg3()
