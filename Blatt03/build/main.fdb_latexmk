@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1479823859 "main.tex" "build/main.pdf" "main" 1479823870
-  "../header.tex" 1478125415 2711 645726e5e69ee7c2362a3029f8e0d1c8 ""
+["pdflatex"] 1479825713 "main.tex" "build/main.pdf" "main" 1479825720
+  "../header.tex" 1479825185 2711 645726e5e69ee7c2362a3029f8e0d1c8 ""
   "/home/opiate/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/home/opiate/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
   "/home/opiate/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1246382020 908 2921f8a10601f252058503cc6570e581 ""
@@ -156,15 +156,15 @@
   "/home/opiate/.local/texlive/2016/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1478640221 13195 68770019b764abeab464da316e60a9fa ""
   "/home/opiate/.local/texlive/2016/texmf-var/luatex-cache/generic/names/luaotfload-names.luc" 1476564109 1628688 345f724b079b6238b1ed72c7806d7461 ""
   "/home/opiate/.local/texlive/2016/texmf-var/web2c/luatex/lualatex.fmt" 1476447226 1246156 a2c067a7405bbacfa1a867a74a8a046e ""
-  "N_hits_log.png" 1479823847 34065 b3897757ee455387f961ff1ee845ad99 ""
-  "b_hist.png" 1479823853 38086 8c0e408c691e9507cf9c2bacc77e5c99 ""
-  "build/main.aux" 1479823870 1324 014213235cfbc054ed219b49292d13b7 ""
+  "N_hits_log.png" 1479825694 33816 30c19ee6841faff6e87f8a27029374c8 ""
+  "b_hist.png" 1479825700 37953 bac993ea0b49bf5b32b3aa7270a1654b ""
+  "build/main.aux" 1479825719 1324 014213235cfbc054ed219b49292d13b7 ""
   "exercises.tex" 1479811749 706 4abf6018265489afc382f8e3cdf2456a ""
   "main.tex" 1479811832 639 f6dcc16f3fea10ab2e3b84caa76d489c ""
-  "x1_x2_hist.png" 1479823851 34291 c55dbcab76ce27c4de088756b1ab1288 ""
-  "x1_x2_hist_signal.png" 1479823852 29624 d96d6f1c40481bb0263cd04187da1347 ""
+  "x1_x2_hist.png" 1479825698 34841 ff45d55175dbb89bf95f3cd0aee3aff6 ""
+  "x1_x2_hist_signal.png" 1479825699 30475 165befe1efde002cf434dba8863abe6f ""
   (generated)
-  "/home/opiate/.local/texlive/2016/texmf-var/m_t_x_t_e_s_t.tmp"
   "build/main.aux"
+  "/home/opiate/.local/texlive/2016/texmf-var/m_t_x_t_e_s_t.tmp"
   "build/main.pdf"
   "build/main.log"
