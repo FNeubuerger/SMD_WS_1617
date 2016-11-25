@@ -117,45 +117,34 @@ def aufg2():
 	#1d histograms of projected points
 	bins=50
 	fig=plt.figure(figsize=(16,20))
-	ax1 = fig.add_subplot(321)
-	plt.hist(P0g1_x,bins=bins,rasterized=True,histtype='stepfilled')	
+	ax1 = fig.add_subplot(311)
+	plt.hist(P0g1_x,bins=bins,rasterized=True,histtype='stepfilled',color='red',label='Signal',alpha=0.5)
+	plt.hist(P1g1_x,bins=bins,rasterized=True,histtype='stepfilled',color='navy',label='Background',alpha=0.5)
+		
 	plt.ylabel(r'Anzahl')
 	plt.xlim(-15,15)
 	plt.setp(ax1.get_xticklabels(), visible=False)
 
-	ax2 = fig.add_subplot(322,sharey=ax1,sharex=ax1)
-	plt.hist(P1g1_x,bins=bins,rasterized=True,histtype='stepfilled')
-	
+	ax2 = fig.add_subplot(312,sharey=ax1,sharex=ax1)
+	plt.hist(P0g2_x,bins=bins,rasterized=True,histtype='stepfilled',color='red',label='Signal',alpha=0.5)
+	plt.hist(P1g2_x,bins=bins,rasterized=True,histtype='stepfilled',color='navy',label='Background',alpha=0.5)
+	plt.ylabel(r'Anzahl')
 	plt.setp(ax2.get_xticklabels(), visible=False)
 	plt.setp(ax2.get_yticklabels(), visible=False)
 
-	ax3 = fig.add_subplot(323,sharey=ax1,sharex=ax1)
-	plt.hist(P0g2_x,bins=bins,rasterized=True,histtype='stepfilled')
-	plt.ylabel(r'Anzahl')
-	plt.setp(ax3.get_xticklabels(), visible=False)
+	ax3 = fig.add_subplot(313,sharey=ax1,sharex=ax1)
 	
-	ax4 = fig.add_subplot(324,sharey=ax1,sharex=ax1)
-	plt.hist(P1g2_x,bins=bins,rasterized=True,histtype='stepfilled')
-	plt.setp(ax4.get_xticklabels(), visible=False)
-	plt.setp(ax4.get_yticklabels(), visible=False)
-	
-	ax5 = fig.add_subplot(325,sharey=ax1,sharex=ax1)
-	plt.hist(P0g3_x,bins=bins,rasterized=True,histtype='stepfilled')
+	plt.hist(P0g3_x,bins=bins,rasterized=True,histtype='stepfilled',color='red',label='Signal',alpha=0.5)
+	plt.hist(P1g3_x,bins=bins,rasterized=True,histtype='stepfilled',color='navy',label='Background',alpha=0.5)
 	plt.xlabel(r'$x_{\text{proj}}$')
 	plt.ylabel(r'Anzahl')
 
-	ax6 = fig.add_subplot(326,sharey=ax1,sharex=ax1)
-	plt.hist(P1g3_x,bins=bins,rasterized=True,histtype='stepfilled')
-	plt.xlabel(r'$x_{\text{proj}}$')
-	
-	plt.setp(ax6.get_yticklabels(), visible=False)
-	
 	plt.tight_layout()
 	plt.savefig('hists_proj.png',dpi=200)
 	#plt.show()
 	plt.clf()
 
-
+	#exit(0)
 	#label data
 	labels_P0 = labelling(P0['x'],1)
 
@@ -170,7 +159,7 @@ def aufg2():
 	example1_x = np.array([P0g1_x,P1g1_x]).flatten() #merge sets
 
 
-	pred_g1,cuts_g1 = predict(example1_x,n_cuts=ncuts,cut_min=-15,cut_max=20)
+	pred_g1,cuts_g1 = predict(example1_x,n_cuts=ncuts,cut_min=-10,cut_max=10)
 	
 	prec_g1=[]
 	rec_g1=[]
@@ -190,7 +179,7 @@ def aufg2():
 	plt.plot(cuts_g1,rec_g1,label='recall',rasterized=True)
 	plt.plot(cuts_g1,acc_g1,label='accuracy',rasterized=True)
 	plt.legend(loc='best')
-	plt.savefig('performace_g1.png',dpi=200)
+	plt.savefig('performace_g1.png',dpi=100)
 	#plt.show()
 
 
@@ -198,7 +187,7 @@ def aufg2():
 	example2_x = np.array([P0g2_x,P1g2_x]).flatten() #merge sets
 		
 
-	pred_g2,cuts_g2 = predict(example2_x,n_cuts=ncuts,cut_min=-15,cut_max=20)
+	pred_g2,cuts_g2 = predict(example2_x,n_cuts=ncuts,cut_min=-10,cut_max=10)
 	
 
 	prec_g2=[]
@@ -214,18 +203,18 @@ def aufg2():
 		
 	#print(prec_g2,rec_g2,acc_g2)
 	plt.clf()
-	plt.plot(cuts_g1,prec_g2,label='precision',rasterized=True)
-	plt.plot(cuts_g1,rec_g2,label='recall',rasterized=True)
-	plt.plot(cuts_g1,acc_g2,label='accuracy',rasterized=True)
+	plt.plot(cuts_g2,prec_g2,label='precision',rasterized=True)
+	plt.plot(cuts_g2,rec_g2,label='recall',rasterized=True)
+	plt.plot(cuts_g2,acc_g2,label='accuracy',rasterized=True)
 	plt.legend(loc='best')
-	plt.savefig('performace_g2.png',dpi=200)
+	plt.savefig('performace_g2.png',dpi=100)
 	#plt.show()
 
 	#prediction and performance for g3
 	example3_x = np.array([P0g3_x,P1g3_x]).flatten() #merge sets
 		
 
-	pred_g3,cuts_g3 = predict(example3_x,n_cuts=ncuts,cut_min=-15,cut_max=20)
+	pred_g3,cuts_g3 = predict(example3_x,n_cuts=ncuts,cut_min=-10,cut_max=10)
 	
 
 	prec_g3=[]
@@ -245,7 +234,7 @@ def aufg2():
 	plt.plot(cuts_g3,rec_g3,label='recall',rasterized=True)
 	plt.plot(cuts_g3,acc_g3,label='accuracy',rasterized=True)
 	plt.legend(loc='best')
-	plt.savefig('performace_g3.png',dpi=200)
+	plt.savefig('performace_g3.png',dpi=100)
 	#lt.show()
 
 
