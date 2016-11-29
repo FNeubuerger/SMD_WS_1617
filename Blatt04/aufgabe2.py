@@ -120,7 +120,7 @@ def aufg2():
 	ax1 = fig.add_subplot(311)
 	plt.hist(P0g1_x,bins=bins,rasterized=True,histtype='stepfilled',color='red',label='Signal',alpha=0.5)
 	plt.hist(P1g1_x,bins=bins,rasterized=True,histtype='stepfilled',color='navy',label='Background',alpha=0.5)
-		
+	
 	plt.ylabel(r'Anzahl')
 	plt.xlim(-15,15)
 	plt.setp(ax1.get_xticklabels(), visible=False)
@@ -136,7 +136,7 @@ def aufg2():
 	
 	plt.hist(P0g3_x,bins=bins,rasterized=True,histtype='stepfilled',color='red',label='Signal',alpha=0.5)
 	plt.hist(P1g3_x,bins=bins,rasterized=True,histtype='stepfilled',color='navy',label='Background',alpha=0.5)
-	plt.xlabel(r'$x_{\text{proj}}$')
+	plt.xlabel(r'$x_{\text{proj}}$',fontsize=18)
 	plt.ylabel(r'Anzahl')
 
 	plt.tight_layout()
