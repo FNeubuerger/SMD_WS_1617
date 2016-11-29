@@ -50,6 +50,19 @@ def aufg1():
 	rpd.to_root(P1,'zwei_populationen_1.root',key='P1',mode='a')
 	rpd.to_root(P0_2,'zwei_populationen_1.root',key='P0_1000',mode='a')
 	
+	x_mean = np.mean(xx)
+	print(x_mean)
+	y_mean = np.mean(y1)
+	print(y_mean)
+	x_var = np.std(xx)**2
+	print(x_var)
+	y_var = np.std(y1)**2
+	print(y_var)
+	XY=np.vstack((xx,y1))
+	covXY = np.cov(XY)
+	print(covXY)
+	corrcoeff = np.corrcoef(xx,y1)
+	print(corrcoeff)
 
 
 
