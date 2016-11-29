@@ -5,6 +5,7 @@ plt.style.use('ggplot')
 plt.rcParams['text.usetex'] = True
 plt.rcParams['text.latex.unicode'] = True
 plt.rcParams['font.family'] = 'lmodern'
+plt.rcParams['font.size'] = 18
 
 def g1(x):
 	return 0*x
@@ -30,9 +31,9 @@ def performance(prediction,label):
 	
 	
 	if tp==0 and fp==0: 
-		precision=0
+		precision=1
 	else:
-		precision = tp/(tp+fp)
+		precision = 1- tp/(tp+fp)
 	if tp==0 and fn==0:
 		recall = 0
 	else:
@@ -136,7 +137,7 @@ def aufg2():
 	
 	plt.hist(P0g3_x,bins=bins,rasterized=True,histtype='stepfilled',color='red',label='Signal',alpha=0.5)
 	plt.hist(P1g3_x,bins=bins,rasterized=True,histtype='stepfilled',color='navy',label='Background',alpha=0.5)
-	plt.xlabel(r'$x_{\text{proj}}$',fontsize=18)
+	plt.xlabel(r'$x$')
 	plt.ylabel(r'Anzahl')
 
 	plt.tight_layout()
