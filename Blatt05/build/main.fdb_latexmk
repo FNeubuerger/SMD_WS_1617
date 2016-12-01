@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1480534146 "main.tex" "build/main.pdf" "main" 1480534154
+["pdflatex"] 1480601215 "main.tex" "build/main.pdf" "main" 1480601227
   "../header.tex" 1478620410 2711 645726e5e69ee7c2362a3029f8e0d1c8 ""
   "/home/helena/.local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/home/helena/.local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
@@ -171,13 +171,11 @@
   "/home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1478639576 22751 f356f7b264cdd9b361fc7a659e85d057 ""
   "/home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/names/luaotfload-names.luc" 1465285256 670998 adbccbbbebabc6f2ba78e155b6c36414 ""
   "/home/helena/.local/texlive/2014/texmf-var/web2c/luatex/lualatex.fmt" 1413639403 676375 4f0dd0e5a5f161441d0cdeed183d18a3 ""
-  "build/main.aux" 1480534153 693 e62c83cfda8a80ee18afc02c7afeacc4 ""
-  "build/scatter_P0_P1.png" 0 -1 0 ""
-  "exercises.tex" 1480534140 12205 a7236d8bb5a36e561b8d85bf78a88fa1 ""
+  "build/main.aux" 1480601226 693 e62c83cfda8a80ee18afc02c7afeacc4 ""
+  "exercises.tex" 1480601212 1162 913ec0e4b52dbc33852d70530c0f2d5f ""
   "main.tex" 1480533798 639 f6dcc16f3fea10ab2e3b84caa76d489c ""
-  "scatter_P0_P1.png" 0 -1 0 ""
   (generated)
-  "build/main.pdf"
-  "build/main.aux"
   "/home/helena/.local/texlive/2014/texmf-var/m_t_x_t_e_s_t.tmp"
   "build/main.log"
+  "build/main.pdf"
+  "build/main.aux"

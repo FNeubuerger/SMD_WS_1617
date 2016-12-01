@@ -319,3 +319,5 @@ INPUT /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/
 INPUT /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmsans10-boldoblique.luc
 INPUT /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc
 INPUT /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc
+INPUT build/main.aux
+INPUT build/main.aux
