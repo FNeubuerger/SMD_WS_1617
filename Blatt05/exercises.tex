@@ -94,13 +94,12 @@ S_B = 	\begin{pmatrix}	8.89053611e+04  & 1.07885616e+03 \\
 \end{itemize}
 \section*{Aufgabe 2: \emph{kMeans per Hand}}
 
-Population: $(1,4) (1,5) (1,6) (3,3) (3,2) (4,1) (5,1) (6,2) (6,3) (8,4) (8,5) (8,6)$
+Population: $(1,4) (1,5) (1,6) (3,3) (3,2) (4,1) (5,1) (6,2) (6,3) (8,4) (8,5) (8,6)$\\
 Clusterzentren: $(3,4) (7,4) (3,7)$
-\begin{itemize}
-\item[a)] 
-\begin{table}
+
+\begin{table}[H]
 \centering
-\caption{Messdaten für dubiose Elemente.}
+\caption{Zu den ursprünglich gewählten Clusterzentren gehörende Datenpunkte.}
 \begin{tabular}{S S S S S S S}
 \toprule
 \multicolumn{1}{c}{Clusterzentrum} & \multicolumn{6}{c}{Datenpunkte} \\
@@ -112,9 +111,9 @@ Clusterzentren: $(3,4) (7,4) (3,7)$
 \end{tabular}
 \end{table}
 
-\begin{table}
+\begin{table}[H]
 \centering
-\caption{Messdaten für dubiose Elemente.}
+\caption{Berechnete Clusterzentren nach der ersten Iteration und Zugehörigkeit der Datenpunkte.}
 \begin{tabular}{S S S S S S S S}
 \toprule
 \multicolumn{1}{c}{Clusterzentrum} & \multicolumn{6}{c}{Datenpunkte} \\
@@ -126,9 +125,9 @@ Clusterzentren: $(3,4) (7,4) (3,7)$
 \end{tabular}
 \end{table}
 
-\begin{table}
+\begin{table}[H]
 \centering
-\caption{Messdaten für dubiose Elemente.}
+\caption{Berechnete Clusterzentren nach der zweiten Iteration und Zugehörigkeit der Datenpunkte.}
 \begin{tabular}{S S S S S S S S}
 \toprule
 \multicolumn{1}{c}{Clusterzentrum} & \multicolumn{6}{c}{Datenpunkte} \\
@@ -140,12 +139,9 @@ Clusterzentren: $(3,4) (7,4) (3,7)$
 \end{tabular}
 \end{table}
 
-
-
-
 \begin{table}
 \centering
-\caption{Messdaten für dubiose Elemente.}
+\caption{Berechnete Clusterzentren nach der dritten Iteration und Zugehörigkeit der Datenpunkte.}
 \begin{tabular}{S S S S S S S S}
 \toprule
 \multicolumn{1}{c}{Clusterzentrum} & \multicolumn{6}{c}{Datenpunkte} \\
@@ -159,7 +155,7 @@ Clusterzentren: $(3,4) (7,4) (3,7)$
 
 \begin{table}
 \centering
-\caption{Messdaten für dubiose Elemente.}
+\caption{Berechnete Clusterzentren nach der vierten Iteration und Zugehörigkeit der Datenpunkte.}
 \begin{tabular}{S S S S S S S S}
 \toprule
 \multicolumn{1}{c}{Clusterzentrum} & \multicolumn{6}{c}{Datenpunkte} \\
@@ -174,7 +170,7 @@ Clusterzentren: $(3,4) (7,4) (3,7)$
 
 \begin{table}
 \centering
-\caption{Messdaten für dubiose Elemente.}
+\caption{Berechnete Clusterzentren nach der fünften Iteration und Zugehörigkeit der Datenpunkte.}
 \begin{tabular}{S S S S S S S S}
 \toprule
 \multicolumn{1}{c}{Clusterzentrum} & \multicolumn{6}{c}{Datenpunkte} \\
@@ -186,8 +182,18 @@ Clusterzentren: $(3,4) (7,4) (3,7)$
 \end{tabular}
 \end{table}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{kmeans.jpg}
+	\caption{Zugehörigkeit der Datenpunkte zu den Clusterzentren nach jeder Iteration.}
+\end{figure}
 
-\end{itemize}
+
+
+Die Berechnung der Abstände einiger Punkte zu den Clustern, die Berechnung der neuen Clusterzentren als Mittelwert ihrer zugehörigen Datenpunkte und die Berechnung der Clustergrenzen sind nicht mit aufgeführt. \\
+Die Verteilung der Datenpunkte auf die drei Clustern ändert sich zwischen der vierten und fünften Iteration nicht; der Algorithmus konvergiert. \\
+Die Verteilung der Punkte auf die Zentren entspricht der intuitiven Gruppierung der Punkte bei Betrachtung der Abbildung. Nur den Punkt (6,3) würde man eher zu Cluster 1 zählen. Laut Algorithmus gehört er jedoch zu Cluster 2.
+
 \section*{Aufgabe 3: \emph{Feature Selection mit dem MRMR--Algorthmus}}
 \begin{itemize}
 \item[a), b) und c)]
