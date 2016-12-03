@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  3 DEC 2016 14:37
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  3 DEC 2016 14:44
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -595,20 +595,1063 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 Variant \prop_gput:cnV already defined; not changing it on line 666
 Variant \prop_gput:cnx already defined; not changing it on line 667
 \l__fontspec_tmp_int=\count288
+LaTeX Info: Redefining \itshape on input line 2117.
+LaTeX Info: Redefining \slshape on input line 2122.
+LaTeX Info: Redefining \scshape on input line 2127.
+LaTeX Info: Redefining \upshape on input line 2132.
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/unicode-math/unicode-math.sty
+Package: unicode-math 2014/06/30 v0.7f Unicode maths in XeLaTeX and LuaLaTeX
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2014/09/15 v5423 LaTeX2e option processing using LaTeX3 keys
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/generic/oberdiek/catchfile.sty
+Package: catchfile 2011/03/01 v1.6 Catch the contents of a file (HO)
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2014/08/30 v1.1s fixes to LaTeX
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2011/10/12 v0.5d Hooks for input files
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/filehook/filehook-scrlfile.sty
+Package: filehook-scrlfile 2011/01/03 v0.1 filehook patch for scrlfile package
+Package filehook Info: Package 'scrlfile' detected and compensated for on input line 102.
+))
+Variant \tl_put_right:cx already defined; not changing it on line 67
+Variant \seq_if_in:NVTF already defined; not changing it on line 68
+\g_um_fam_int=\count289
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \unimathsetup with sig. 'm' on line 156.
+.................................................
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/unicode-math/unicode-math-luatex.sty (/home/helena/.local/texlive/2014/texmf-dist/tex/lualatex/lualatex-math/lualatex-math.sty
+Package: lualatex-math 2014/08/18 v1.4 Patches for mathematics typesetting with LuaLaTeX
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+\etb@tempcnta=\count290
+)
+(/home/helena/.local/texlive/2014/texmf-dist/tex/lualatex/lualatex-math/lualatex-math.lua)
+Lua module: lualatex-math 2013/08/03 1.3 Patches for mathematics typesetting with LuaLaTeX
+.................................................
+. lualatex-math info: "patch-macro"
+. 
+. I'm going to patch macro \new@mathgroup.
+.................................................
+.................................................
+. lualatex-math info: "patch-macro"
+. 
+. I'm going to patch macro \resetMathstrut@.
+.................................................
+.................................................
+. lualatex-math info: "patch-macro"
+. 
+. I'm going to patch macro \subarray.
+.................................................
+.................................................
+. lualatex-math info: "patch-macro"
+. 
+. I'm going to patch macro \frac .
+.................................................
+.................................................
+. lualatex-math info: "patch-macro"
+. 
+. I'm going to patch macro \@genfrac.
+.................................................
+.................................................
+. lualatex-math info: "patch-macro"
+. 
+. I'm going to patch macro \newmcodes@.
+.................................................
+.................................................
+. lualatex-math info: "patch-macro"
+. 
+. I'm going to patch macro \MT_cramped_internal:Nn.
+.................................................
+)
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathfont with sig. 'O{}m' on line 384.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addnolimits with sig. 'm' on line 628.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \removenolimits with sig. 'm' on line 632.
+.................................................
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex)
+\g_um_primekern_muskip=\muskip17
+\l_um_primecount_int=\count291
+.................................................
+. unicode-math info: "patch-macro"
+. 
+. I'm going to patch macro \plainroot@.
+.................................................
+.................................................
+. unicode-math info: "patch-macro"
+. 
+. I'm going to patch macro \r@@t.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \dblcolon with sig. '' on line 2943.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \coloneqq with sig. '' on line 2943.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Coloneqq with sig. '' on line 2943.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \eqqcolon with sig. '' on line 2943.
+.................................................
+))
+\g__file_internal_ior=\read1
+luaotfload | cache : Lookup cache loaded from /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/latinmodern-math.luc)
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+\g__fontspec_family_LatinModernMath_int=\count292
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font LatinModernMath/B (it probably doesn't exist).
+.................................................
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | aux : font no 21 (LatinModernMath-Regular) does not define feature smcp for script math with language dflt
+luaotfload | aux : no font with id 21
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LatinModernMath(0)' created for font 'Latin Modern Math' with
+. options
+. [Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=7-10,Font=Latin
+. Modern Math,Style=MathScript},{Size=-7,Font=Latin Modern
+. Math,Style=MathScriptScript}}].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. 
+. <10->"LatinModernMath:mode=base;script=math;language=DFLT;"<7-10>"LatinModernMath:mode=base;script=math;language=DFLT;+ssty=0;"<-7>"LatinModernMath:mode=base;script=math;language=DFLT;+ssty=1;"
+. 
+. * 'small caps' with NFSS spec.:
+. 
+. and font adjustment code:
+. 
+.................................................
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
+(Font)              `operators' in the math version `normal' on input line 36.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> EU2/LatinModernMath(0)/m/n on input line 36.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
+(Font)              `operators' in the math version `bold' on input line 36.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> EU2/LatinModernMath(0)/bx/n on input line 36.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font LatinModernMath/B (it probably doesn't exist).
+.................................................
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | aux : font no 21 (LatinModernMath-Regular) does not define feature smcp for script math with language dflt
+luaotfload | aux : no font with id 21
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LatinModernMath(1)' created for font 'Latin Modern Math' with
+. options
+. [Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=7-10,Font=Latin
+. Modern Math,Style=MathScript},{Size=-7,Font=Latin Modern
+. Math,Style=MathScriptScript}},Scale=1.00001,FontAdjustment={\fontdimen
+. 8\font =443678.72sp\relax \fontdimen 9\font =258211.84sp\relax \fontdimen
+. 10\font =290979.84sp\relax \fontdimen 11\font =449576.96sp\relax \fontdimen
+. 12\font =226099.2sp\relax \fontdimen 13\font =237895.68sp\relax \fontdimen
+. 14\font =237895.68sp\relax \fontdimen 15\font =189399.04sp\relax \fontdimen
+. 16\font =161873.92sp\relax \fontdimen 17\font =0sp\relax \fontdimen 18\font
+. =163840sp\relax \fontdimen 19\font =131072sp\relax \fontdimen 20\font
+. =0pt\relax \fontdimen 21\font =0pt\relax \fontdimen 22\font =163840sp\relax
+. }].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. 
+. <10->s*[1.00001]"LatinModernMath:mode=base;script=math;language=DFLT;"<7-10>s*[1.00001]"LatinModernMath:mode=base;script=math;language=DFLT;+ssty=0;"<-7>s*[1.00001]"LatinModernMath:mode=base;script=math;language=DFLT;+ssty=1;"
+. 
+. * 'small caps' with NFSS spec.:
+. 
+. and font adjustment code:
+. \fontdimen 8\font =443678.72sp\relax \fontdimen 9\font =258211.84sp\relax
+. \fontdimen 10\font =290979.84sp\relax \fontdimen 11\font =449576.96sp\relax
+. \fontdimen 12\font =226099.2sp\relax \fontdimen 13\font =237895.68sp\relax
+. \fontdimen 14\font =237895.68sp\relax \fontdimen 15\font =189399.04sp\relax
+. \fontdimen 16\font =161873.92sp\relax \fontdimen 17\font =0sp\relax
+. \fontdimen 18\font =163840sp\relax \fontdimen 19\font =131072sp\relax
+. \fontdimen 20\font =0pt\relax \fontdimen 21\font =0pt\relax \fontdimen
+. 22\font =163840sp\relax 
+.................................................
+LaTeX Font Info:    Encoding `OMS' has changed to `EU2' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 36.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> EU2/LatinModernMath(1)/m/n on input line 36.
+LaTeX Font Info:    Encoding `OMS' has changed to `EU2' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 36.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> EU2/LatinModernMath(1)/bx/n on input line 36.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font LatinModernMath/B (it probably doesn't exist).
+.................................................
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | aux : font no 21 (LatinModernMath-Regular) does not define feature smcp for script math with language dflt
+luaotfload | aux : no font with id 21
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LatinModernMath(2)' created for font 'Latin Modern Math' with
+. options
+. [Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=7-10,Font=Latin
+. Modern Math,Style=MathScript},{Size=-7,Font=Latin Modern
+. Math,Style=MathScriptScript}},Scale=0.99999,FontAdjustment={\fontdimen
+. 8\font =26214.4sp\relax \fontdimen 9\font =131072sp\relax \fontdimen 10\font
+. =109445.12sp\relax \fontdimen 11\font =72744.96sp\relax \fontdimen 12\font
+. =393216sp\relax \fontdimen 13\font =0pt\relax }].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. 
+. <10->s*[0.99999]"LatinModernMath:mode=base;script=math;language=DFLT;"<7-10>s*[0.99999]"LatinModernMath:mode=base;script=math;language=DFLT;+ssty=0;"<-7>s*[0.99999]"LatinModernMath:mode=base;script=math;language=DFLT;+ssty=1;"
+. 
+. * 'small caps' with NFSS spec.:
+. 
+. and font adjustment code:
+. \fontdimen 8\font =26214.4sp\relax \fontdimen 9\font =131072sp\relax
+. \fontdimen 10\font =109445.12sp\relax \fontdimen 11\font =72744.96sp\relax
+. \fontdimen 12\font =393216sp\relax \fontdimen 13\font =0pt\relax 
+.................................................
+LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 36.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> EU2/LatinModernMath(2)/m/n on input line 36.
+LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 36.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> EU2/LatinModernMath(2)/bx/n on input line 36.
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2014/10/01 v2.6c A comprehensive (SI) units package
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen261
+\extrarowheight=\dimen262
+\NC@list=\toks23
+\extratabsurround=\skip256
+\backup@length=\skip257
+)
+Variant \tl_if_blank:VTF already defined; not changing it on line 50
+\l__siunitx_tmp_box=\box256
+\l__siunitx_tmp_dim=\dimen263
+\l__siunitx_tmp_int=\count293
+Variant \prop_get:NVNT already defined; not changing it on line 372
+Variant \prop_get:NVNF already defined; not changing it on line 373
+Variant \prop_get:NVNTF already defined; not changing it on line 374
+\l__siunitx_number_mantissa_length_int=\count294
+\l__siunitx_number_uncert_length_int=\count295
+\l__siunitx_round_int=\count296
+\l__siunitx_process_decimal_int=\count297
+\l__siunitx_process_uncertainty_int=\count298
+\l__siunitx_process_fixed_int=\count299
+\l__siunitx_process_integer_min_int=\count300
+\l__siunitx_process_precision_int=\count301
+\l__siunitx_group_min_int=\count302
+\l__siunitx_angle_marker_box=\box257
+\l__siunitx_angle_unit_box=\box258
+\l__siunitx_angle_marker_dim=\dimen264
+\l__siunitx_angle_unit_dim=\dimen265
+\l__siunitx_unit_int=\count303
+\l__siunitx_unit_denominator_int=\count304
+\l__siunitx_unit_numerator_int=\count305
+\l__siunitx_unit_prefix_int=\count306
+\l__siunitx_unit_prefix_base_int=\count307
+\l__siunitx_unit_prefix_gram_int=\count308
+\l__siunitx_number_product_int=\count309
+\c__siunitx_one_fill_skip=\skip258
+\l__siunitx_table_unit_align_skip=\skip259
+\l__siunitx_table_exponent_dim=\dimen266
+\l__siunitx_table_integer_dim=\dimen267
+\l__siunitx_table_mantissa_dim=\dimen268
+\l__siunitx_table_marker_dim=\dimen269
+\l__siunitx_table_result_dim=\dimen270
+\l__siunitx_table_uncert_dim=\dimen271
+\l__siunitx_table_fill_pre_dim=\dimen272
+\l__siunitx_table_fill_post_dim=\dimen273
+\l__siunitx_table_fill_mid_dim=\dimen274
+\l__siunitx_table_pre_box=\box259
+\l__siunitx_table_post_box=\box260
+\l__siunitx_table_mantissa_box=\box261
+\l__siunitx_table_result_box=\box262
+\l__siunitx_table_number_align_skip=\skip260
+\l__siunitx_table_text_align_skip=\skip261
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareBinaryPrefix with sig. 'mmm' on line 7168.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPostPower with sig. 'mm' on line 7171.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrefix with sig. 'mmm' on line 7174.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrePower with sig. 'mm' on line 7177.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIQualifier with sig. 'mm' on line 7180.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnit with sig. 'O{}mm' on line 7183.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnitWithOptions with sig. 'mmm' on line 7186.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ang with sig. 'o>{\SplitArgument {2}{;}}m' on line 7201.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \num with sig. 'om' on line 7209.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numlist with sig. 'o>{\SplitList {;}}m' on line 7217.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numrange with sig. 'omm' on line 7225.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIlist with sig. 'o>{\SplitList {;}}mm' on line 7236.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIrange with sig. 'ommm' on line 7247.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SI with sig. 'omom' on line 7258.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \sisetup with sig. 'm' on line 7261.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tablenum with sig. 'om' on line 7273.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \si with sig. 'om' on line 7284.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_num:w with sig. 'om' on line 7331.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_numrange:w with sig. 'omm' on line
+. 7333.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SI:w with sig. 'omom' on line 7335.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SIlist:w with sig. 'omm' on line 7337.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SIrange:w with sig. 'ommm' on line
+. 7339.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_si:w with sig. 'om' on line 7340.
+.................................................
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator.sty
+Package: translator 2010/06/12 ver 1.10
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator-language-mappings.tex))) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2011/10/22 v5.1d context-sensitive quotations
+\csq@reset=\count310
+\csq@gtype=\count311
+\csq@glevel=\count312
+\csq@qlevel=\count313
+\csq@maxlvl=\count314
+\csq@tshold=\count315
+\csq@ltx@everypar=\toks24
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2011/10/22 v5.1d csquotes generic definitions
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)
+Package csquotes Info: Enabling multilingual quotes.
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/l3packages/xfrac/xfrac.sty (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 42.
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2014/09/15 v5423 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen275
+\l__xtemplate_tmp_int=\count316
+\l__xtemplate_tmp_muskip=\muskip18
+\l__xtemplate_tmp_skip=\skip262
+Variant \prop_get:NoNTF already defined; not changing it on line 106
+Variant \prop_get:NoNT already defined; not changing it on line 107
+Variant \prop_get:NoNF already defined; not changing it on line 108
+)
+Package: xfrac 2014/05/04 v4728 L3 Experimental split-level fractions
+\l__xfrac_slash_box=\box263
+\l__xfrac_tmp_box=\box264
+\l__xfrac_denominator_bot_sep_dim=\dimen276
+\l__xfrac_numerator_bot_sep_dim=\dimen277
+\l__xfrac_numerator_top_sep_dim=\dimen278
+\l__xfrac_slash_left_sep_dim=\dimen279
+\l__xfrac_slash_right_sep_dim=\dimen280
+\l__xfrac_slash_left_muskip=\muskip19
+\l__xfrac_slash_right_muskip=\muskip20
+.................................................
+. xtemplate info: "declare-object-type"
+. 
+. Declaring object type 'xfrac' taking 3 argument(s) on line 96.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \sfrac with sig. 'omom' on line 436.
+.................................................
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count317
+\float@exts=\toks25
+\float@box=\box265
+\@float@everytoks=\toks26
+\@floatcapt=\box266
+)
+Package scrhack Info: loading float hack on input line 56.
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/koma-script/float.hak
+File: float.hak 2013/12/19 v3.12 KOMA-Script package (hacking package float)
+Package scrhack Info: redefining \newfloat on input line 161.
+Package scrhack Info: redefining \listof on input line 161.
+Package scrhack Info: undefining \float@addtolists on input line 161.
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen281
+\captionmargin@=\dimen282
+\captionwidth=\dimen283
+\caption@tempdima=\dimen284
+\caption@indent=\dimen285
+\caption@parindent=\dimen286
+\caption@hangindent=\dimen287
+)
+Package caption Info: KOMA-Script document class.
+\c@ContinuedFloat=\count318
+Package caption Info: float package is loaded.
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count319
+\c@subtable=\count320
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/oberdiek/grffile.sty
+Package: grffile 2012/04/05 v1.16 Extended file name support for graphics (HO)
+Package grffile Info: Option `multidot' is set to `true'.
+Package grffile Info: Option `extendedchars' is set to `false'.
+Package grffile Info: Option `space' is set to `true'.
+Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 486.
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen288
+\lightrulewidth=\dimen289
+\cmidrulewidth=\dimen290
+\belowrulesep=\dimen291
+\belowbottomsep=\dimen292
+\aboverulesep=\dimen293
+\abovetopsep=\dimen294
+\cmidrulesep=\dimen295
+\cmidrulekern=\dimen296
+\defaultaddspace=\dimen297
+\@cmidla=\count321
+\@cmidlb=\count322
+\@aboverulesep=\dimen298
+\@belowrulesep=\dimen299
+\@thisruleclass=\count323
+\@lastruleclass=\count324
+\@thisrulewidth=\dimen300
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
+\MT@toks=\toks27
+\MT@count=\count325
+LaTeX Info: Redefining \textls on input line 766.
+\MT@outer@kern=\dimen301
+LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
+\MT@listname@count=\count326
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/microtype/microtype-luatex.def
+File: microtype-luatex.def 2013/05/23 v2.5a Definitions specific to luatex (RS)
 
-! Interruption.
-<to be read again> 
-\key info > fontspec/Language/FRL 
-l.1925 \newfontlanguage{Friulian}{FRL}
-                                    \newfontlanguage{Futa}{FTA}
+(/home/helena/.local/texlive/2014/texmf-dist/tex/latex/microtype/microtype.lua)
+Lua module: microtype 2013/05/15 2.5 microtype module.
+LaTeX Info: Redefining \lsstyle on input line 644.
+LaTeX Info: Redefining \lslig on input line 644.
+\MT@outer@space=\skip263
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
+)) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package hobsub Info: Skipping package `luatex-loader' (already loaded).
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package hobsub Info: Skipping package `bigintcalc' (already loaded).
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package hobsub Info: Skipping package `uniquecounter' (already loaded).
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package hobsub Info: Skipping package `atveryend' (already loaded).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen302
+\Hy@linkcounter=\count327
+\Hy@pagecounter=\count328
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count329
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4319.
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `pdfusetitle' set `true' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count330
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip21
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen303
+\Fld@menulength=\count331
+\Field@Width=\dimen304
+\Fld@charsize=\dimen305
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count332
+\c@Item=\count333
+\c@Hfootnote=\count334
+)
+Package scrhack Info: hyperref hack deactivated because of
+(scrhack)             detection of hyperref version, that doesn't
+(scrhack)             need that hack, on input line 96.
+
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/home/helena/.local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count335
+\c@bookmark@seq@number=\count336
+\Hy@SectionHShift=\skip264
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/oberdiek/bookmark.sty
+Package: bookmark 2011/12/02 v1.24 PDF bookmarks (HO)
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
+File: bkm-pdftex.def 2011/12/02 v1.24 bookmark driver for pdfTeX (HO)
+\BKM@id=\count337
+))) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/ncctools/extdash.sty
+Package: extdash 2005/01/29 v1.2 Extended Dash Package (NCC)
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
+
+
+Package csquotes Warning: No multilingual support.
+(csquotes)                Cannot enable multilingual quotes on input line 3.
+
+(./build/main.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 3.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 3.
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count338
+\scratchdimen=\dimen306
+\scratchbox=\box267
+\nofMPsegments=\count339
+\nofMParguments=\count340
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count341
+\MPscratchDim=\dimen307
+\MPnumerator=\count342
+\makeMPintoPDFobject=\count343
+\everyMPtoPDFconversion=\toks29
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+)) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+File: siunitx-abbreviations.cfg 2014/10/01 v2.6c siunitx: Abbreviated units
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Info: Redefining \microtypecontext on input line 3.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
+File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Modern Roman (RS)
+)
+\AtBeginShipoutBox=\box268
+Package hyperref Info: Link coloring OFF on input line 3.
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count344
+)
+LaTeX Info: Redefining \ref on input line 3.
+LaTeX Info: Redefining \pageref on input line 3.
+LaTeX Info: Redefining \nameref on input line 3.
+\c__siunitx_mathsf_int=\count345
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+Package microtype Info: Loading generic settings for font family
+(microtype)             `LatinModernMath' (encoding: EU2).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 10.95015pt on input line 3.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 8.00012pt on input line 3.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 6.00009pt on input line 3.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 10.94983pt on input line 3.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 7.99988pt on input line 3.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 5.99991pt on input line 3.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+ (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+\c__siunitx_mathtt_int=\count346
+(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman17-regular.luc)
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 17.28026pt on input line 7.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 12.00018pt on input line 7.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 10.00015pt on input line 7.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 17.27972pt on input line 7.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 11.99982pt on input line 7.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 9.99985pt on input line 7.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf" (./exercises.tex
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmss' (encoding: EU2).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmsans10-bold.luc)
+LaTeX Font Info:    Font shape `EU2/lmss/bx/it' in size <14.4> not available
+(Font)              Font shape `EU2/lmss/bx/sl' tried instead on input line 1.
+(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmsans10-boldoblique.luc)
+Overfull \hbox (12.66779pt too wide) in paragraph at lines 3--4
+[][]\EU2/lmr/m/n/10.95 Die Mit-tel-w-erte der Verteilun-gen sind: $[] \EU2/LatinModernMath(0)/m/n/10.95 = (0.0223; 3.0256)$ \EU2/lmr/m/n/10.95 und $[] \EU2/LatinModernMath(0)/m/n/10.95 = (5.9857; 3.0980)$ 
+ []
+
+(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc) <hist_0.png, id=7, 578.16pt x 433.62pt>
+File: hist_0.png Graphic file (type png)
+ <use hist_0.png>
+Package pdftex.def Info: hist_0.png used on input line 25.
+(pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 7.00006pt on input line 26.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 5.00008pt on input line 26.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 6.99986pt on input line 26.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 4.99992pt on input line 26.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf" <hist_1.png, id=8, 578.16pt x 433.62pt>
+File: hist_1.png Graphic file (type png)
+ <use hist_1.png>
+Package pdftex.def Info: hist_1.png used on input line 30.
+(pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
+ [1
+
+{/home/helena/.local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] <performace_1.png, id=25, 578.16pt x 433.62pt>
+File: performace_1.png Graphic file (type png)
+ <use performace_1.png>
+Package pdftex.def Info: performace_1.png used on input line 36.
+(pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
+ <performace_2.png, id=26, 578.16pt x 433.62pt>
+File: performace_2.png Graphic file (type png)
+ <use performace_2.png>
+Package pdftex.def Info: performace_2.png used on input line 41.
+(pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
+ [2<./hist_0.png><./hist_1.png>] <sig_bkg_ratio.png, id=37, 578.16pt x 433.62pt>
+File: sig_bkg_ratio.png Graphic file (type png)
+ <use sig_bkg_ratio.png>
+Package pdftex.def Info: sig_bkg_ratio.png used on input line 47.
+(pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
+ <sig_bkg_ratio2.png, id=38, 578.16pt x 433.62pt>
+File: sig_bkg_ratio2.png Graphic file (type png)
+ <use sig_bkg_ratio2.png>
+Package pdftex.def Info: sig_bkg_ratio2.png used on input line 52.
+(pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
+ [3<./performace_1.png><./performace_2.png>] <signifikanz.png, id=48, 578.16pt x 433.62pt>
+File: signifikanz.png Graphic file (type png)
+ <use signifikanz.png>
+Package pdftex.def Info: signifikanz.png used on input line 59.
+(pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
+ <signifikanz2.png, id=49, 578.16pt x 433.62pt>
+File: signifikanz2.png Graphic file (type png)
+ <use signifikanz2.png>
+Package pdftex.def Info: signifikanz2.png used on input line 64.
+(pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
+ [4<./sig_bkg_ratio.png><./sig_bkg_ratio2.png>] <performace_1_h.png, id=58, 578.16pt x 433.62pt>
+File: performace_1_h.png Graphic file (type png)
+ <use performace_1_h.png>
+Package pdftex.def Info: performace_1_h.png used on input line 73.
+(pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
+ [5<./signifikanz.png><./signifikanz2.png>] <sig_bkg_ratio_h.png, id=67, 578.16pt x 433.62pt>
+File: sig_bkg_ratio_h.png Graphic file (type png)
+ <use sig_bkg_ratio_h.png>
+Package pdftex.def Info: sig_bkg_ratio_h.png used on input line 80.
+(pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
+
+Overfull \hbox (2.0254pt too wide) in paragraph at lines 77--82
+[][]\EU2/lmr/m/n/10.95 Das Signal-Untergrundverhältnis wird für die Pro-jek-tion auf $\EU2/LatinModernMath(0)/m/n/10.95 𝜆[]$ \EU2/lmr/m/n/10.95 bei $\EU2/LatinModernMath(0)/m/n/10.95 𝜆[] ≈ −5.35$\EU2/lmr/m/n/10.95 max-
+ []
+
+<signifikanz_h.png, id=68, 578.16pt x 433.62pt>
+File: signifikanz_h.png Graphic file (type png)
+ <use signifikanz_h.png>
+Package pdftex.def Info: signifikanz_h.png used on input line 88.
+(pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
+ [6<./performace_1_h.png><./sig_bkg_ratio_h.png>] <kmeans.jpg, id=77, 722.7pt x 963.6pt>
+File: kmeans.jpg Graphic file (type jpg)
+ <use kmeans.jpg>
+Package pdftex.def Info: kmeans.jpg used on input line 187.
+(pdftex.def)             Requested size: 292.7776pt x 390.37349pt.
+ [7<./signifikanz_h.png>] [8] [9<./kmeans.jpg>] <Rapidminer/Datenbereinigung.png, id=100, 1304.875pt x 746.79pt>
+File: Rapidminer/Datenbereinigung.png Graphic file (type png)
+ <use Rapidminer/Datenbereinigung.png>
+Package pdftex.def Info: Rapidminer/Datenbereinigung.png used on input line 204.
+(pdftex.def)             Requested size: 376.42744pt x 215.43542pt.
+ <Rapidminer/Datenbereinigung_2.png, id=101, 1303.87125pt x 742.775pt>
+File: Rapidminer/Datenbereinigung_2.png Graphic file (type png)
+ <use Rapidminer/Datenbereinigung_2.png>
+Package pdftex.def Info: Rapidminer/Datenbereinigung_2.png used on input line 210.
+(pdftex.def)             Requested size: 376.42744pt x 214.43585pt.
+ [10<./Rapidminer/Datenbereinigung.png>] <Rapidminer/Zusammenfassung.png, id=109, 1304.875pt x 747.79375pt>
+File: Rapidminer/Zusammenfassung.png Graphic file (type png)
+ <use Rapidminer/Zusammenfassung.png>
+Package pdftex.def Info: Rapidminer/Zusammenfassung.png used on input line 216.
+(pdftex.def)             Requested size: 376.42744pt x 215.72499pt.
+ <Rapidminer/MRMR_results.png, id=110, 1371.1225pt x 770.88pt>
+File: Rapidminer/MRMR_results.png Graphic file (type png)
+ <use Rapidminer/MRMR_results.png>
+Package pdftex.def Info: Rapidminer/MRMR_results.png used on input line 222.
+(pdftex.def)             Requested size: 376.42744pt x 211.6339pt.
+ <Rapidminer/Plot.png, id=111, 1371.1225pt x 770.88pt>
+File: Rapidminer/Plot.png Graphic file (type png)
+ <use Rapidminer/Plot.png>
+Package pdftex.def Info: Rapidminer/Plot.png used on input line 228.
+(pdftex.def)             Requested size: 376.42744pt x 211.6339pt.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
+ [11<./Rapidminer/Datenbereinigung_2.png><./Rapidminer/Zusammenfassung.png>] [12<./Rapidminer/MRMR_results.png><./Rapidminer/Plot.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
+ (./build/main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
+Package rerunfilecheck Info: File `main.aux' has not changed.
+(rerunfilecheck)             Checksum: 538B7E4A78E2BB8D54433D307BB64F9C;5210.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 28.
+)
 
 Here is how much of LuaTeX's memory you used:
- 15801 strings out of 494693
- 100000,383344 words of node,token memory allocated
- 302 words of node memory still in use:
-   3 hlist, 1 rule, 1 kern, 1 attribute, 48 glue_spec, 1 attribute_list, 1 write, 1 dir nodes
-   avail lists: 2:12,3:1,4:3,5:1,6:31,7:1,9:1,10:3
- 19185 multiletter control sequences out of 65536+600000
- 20 fonts using 1228327 bytes
- 62i,1n,48p,479b,109s stack positions out of 5000i,500n,10000p,200000b,100000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 36045 strings out of 494693
+ 100000,953878 words of node,token memory allocated
+ 517 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 9 attribute, 58 glue_spec, 9 attribute_list, 1 write nodes
+   avail lists: 1:52,2:5949,3:137,4:1945,5:309,6:1604,7:92,8:12,9:509,10:981,11:521,12:230
+ 38775 multiletter control sequences out of 65536+600000
+ 77 fonts using 21897347 bytes
+ 62i,10n,60p,1064b,859s stack positions out of 5000i,500n,10000p,200000b,100000s
+</home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-boldoblique.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf>
+Output written on main.pdf (12 pages, 1013369 bytes).
+
+PDF statistics: 194 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
+ 42 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

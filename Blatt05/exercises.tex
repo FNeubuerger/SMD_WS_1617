@@ -1,23 +1,23 @@
 \section*{Aufgabe 1: \emph{Fisher--Diskriminante: Implementierung}}
 \begin{itemize}
-\item[a)] Die Mittelwerte der Verteilungen sind: $\vec{\mu_0} = (0.0223003 ; 3.02562461) $ und $\vec{\mu_1} = (5.98570071 ; 3.09798977)$
+\item[a)] Die Mittelwerte der Verteilungen sind: $\vec{\mu_0} = (0.0223 ; 3.0256) $ und $\vec{\mu_1} = (5.9857 ; 3.0980)$
 
 \item[b)] Die Streumatrix innerhalb der Klassen berechnet sich zu:
 \begin{equation}
-S_W = 	\begin{pmatrix} 122897.81109658 & 81975.19093279\\
- 						81975.19093279 & 67446.72860506
+S_W = 	\begin{pmatrix} 122897.8111 & 81975.1909\\
+ 						81975.1909 & 67446.7286
  		\end{pmatrix} 
 \end{equation}
 Die Streumatrix zwischen den Klassen berechnet sich zu:
 \begin{equation}
-S_B = 	\begin{pmatrix}	8.89053611e+04  & 1.07885616e+03 \\
-						1.07885616e+03  & 1.30917934e+01
+S_B = 	\begin{pmatrix}	8.8905\cdot 10^{4}  & 1.0789\cdot 10^3 \\
+						1.0789\cdot 10^{3}  & 1.3092\cdot 10^1
  		\end{pmatrix} 
 \end{equation}
 \item[c)] Die Eigenvektoren berechnen sich zu:
 \begin{align*}
-\vec{\lambda_1} =& ( 0.63668392 ; -0.77112488 ) \quad \text{mit:}\quad \lambda_1 = 3.71 \\
-\vec{\lambda_2} =& ( -0.01213399 ; 0.99992638 ) \quad \text{mit:}\quad \lambda_2 = 1.39 \cdot 10^{-17}
+\vec{\lambda_1} =& ( 0.6367 ; -0.7711 ) \quad \text{mit:}\quad \lambda_1 = 3.71 \\
+\vec{\lambda_2} =& ( -0.0121 ; 0.9999 ) \quad \text{mit:}\quad \lambda_2 = 1.39 \cdot 10^{-17}
 \end{align*}
 \item[d)] Die Projektion der Populationen $P_0$ und $P_1$ auf die Geraden $\lambda_i$.
 \begin{figure}[H]
@@ -97,7 +97,7 @@ S_B = 	\begin{pmatrix}	8.89053611e+04  & 1.07885616e+03 \\
 Population: $(1,4) (1,5) (1,6) (3,3) (3,2) (4,1) (5,1) (6,2) (6,3) (8,4) (8,5) (8,6)$\\
 Clusterzentren: $(3,4) (7,4) (3,7)$
 
-\begin{table}[H]
+\begin{table}
 \centering
 \caption{Zu den ursprünglich gewählten Clusterzentren gehörende Datenpunkte.}
 \begin{tabular}{S S S S S S S}
@@ -111,7 +111,7 @@ Clusterzentren: $(3,4) (7,4) (3,7)$
 \end{tabular}
 \end{table}
 
-\begin{table}[H]
+\begin{table}
 \centering
 \caption{Berechnete Clusterzentren nach der ersten Iteration und Zugehörigkeit der Datenpunkte.}
 \begin{tabular}{S S S S S S S S}
@@ -125,7 +125,7 @@ Clusterzentren: $(3,4) (7,4) (3,7)$
 \end{tabular}
 \end{table}
 
-\begin{table}[H]
+\begin{table}
 \centering
 \caption{Berechnete Clusterzentren nach der zweiten Iteration und Zugehörigkeit der Datenpunkte.}
 \begin{tabular}{S S S S S S S S}
@@ -184,15 +184,16 @@ Clusterzentren: $(3,4) (7,4) (3,7)$
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\textwidth]{kmeans.jpg}
+	\includegraphics[width=0.7\textwidth]{kmeans.jpg}
 	\caption{Zugehörigkeit der Datenpunkte zu den Clusterzentren nach jeder Iteration.}
 \end{figure}
 
 
 
-Die Berechnung der Abstände einiger Punkte zu den Clustern, die Berechnung der neuen Clusterzentren als Mittelwert ihrer zugehörigen Datenpunkte und die Berechnung der Clustergrenzen sind nicht mit aufgeführt. \\
-Die Verteilung der Datenpunkte auf die drei Clustern ändert sich zwischen der vierten und fünften Iteration nicht; der Algorithmus konvergiert. \\
-Die Verteilung der Punkte auf die Zentren entspricht der intuitiven Gruppierung der Punkte bei Betrachtung der Abbildung. Nur den Punkt (6,3) würde man eher zu Cluster 1 zählen. Laut Algorithmus gehört er jedoch zu Cluster 2.
+Die Berechnung der Abstände einiger Punkte zu den Clustern, die Berechnung der neuen Clusterzentren als Mittelwert ihrer zugehörigen Datenpunkte und die Berechnung der Clustergrenzen sind nicht mit aufgeführt. \newline
+Die Verteilung der Datenpunkte auf die drei Clustern ändert sich zwischen der vierten und fünften Iteration nicht; der Algorithmus konvergiert. \newline
+Die Verteilung der Punkte auf die Zentren entspricht der intuitiven Gruppierung der Punkte bei Betrachtung der Abbildung. Nur den Punkt $(6,3)$ würde man eher zu Cluster $1$ zählen; laut Algorithmus gehört er jedoch zu Cluster $2$.
+
 
 \section*{Aufgabe 3: \emph{Feature Selection mit dem MRMR--Algorthmus}}
 \begin{itemize}
