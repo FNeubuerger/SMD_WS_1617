@@ -94,47 +94,130 @@ S_B = 	\begin{pmatrix}	8.89053611e+04  & 1.07885616e+03 \\
 \end{itemize}
 \section*{Aufgabe 2: \emph{kMeans per Hand}}
 
-Population: $(1;4) (1;5) (1;6) (3;3) (3;2) (4;1) (5;1) (6;2) (6;3) (8;4) (8;5) (8;6))$
-
+Population: $(1,4) (1,5) (1,6) (3,3) (3,2) (4,1) (5,1) (6,2) (6,3) (8,4) (8,5) (8,6)$
+Clusterzentren: $(3,4) (7,4) (3,7)$
 \begin{itemize}
-\item[a)] Clusterzentren $(3;4) (7;4) (3;7)$
+\item[a)] 
+\begin{table}
+\centering
+\caption{Messdaten für dubiose Elemente.}
+\begin{tabular}{S S S S S S S}
+\toprule
+\multicolumn{1}{c}{Clusterzentrum} & \multicolumn{6}{c}{Datenpunkte} \\
+\midrule
+\text{(3.00, 4.00)}& \text{(1,5)} &\text{(1,4)}& \text{(3,3)}& \text{(3,2)} &\text{(4,1)}& \\
+\text{(7.00, 4.00)}& \text{(6,2)} &\text{(6,3)} &\text{(8,4)} &\text{(8,5)}& \text{(8,6)} &\text{(5,1)}\\
+\text{(3.00, 7.00)}& \text{(1,6)} &&&&&\\
+\bottomrule
+\end{tabular}
+\end{table}
 
-\begin{align*}
-(3;4): (1;5) (1;4) (3;3) (3;2) (4;1) (5;1)\\
-(7;4): (6;2) (6;3) (8;4) (8;5) (8;6) (5;1)\\
-(3;7): (1;6)
-\end{align*}
+\begin{table}
+\centering
+\caption{Messdaten für dubiose Elemente.}
+\begin{tabular}{S S S S S S S S}
+\toprule
+\multicolumn{1}{c}{Clusterzentrum} & \multicolumn{6}{c}{Datenpunkte} \\
+\midrule
+\text{(2.40, 3.00)}        &\text{(1,4)}& \text{(3,3)} & \text{(3,2)}& \text{(4,1)}&& \\
+\text{(6.83, 3.50)}&\text{(5,1)}& \text{(6,2)}&\text{(6,3)}&\text{(8,4)}&\text{(8,5)}&\text{(8,6)} \\
+\text{(1.00, 6.00) }           &\text{(1,6)}& \text{(1,5)}&&&&\\
+\bottomrule
+\end{tabular}
+\end{table}
 
-\begin{align*}
-\text{neue Clusterzentren:}\\
-(\frac{17}{6}; \frac{8}{3} ) = (2.83; 2.67)\\
-(\frac{41}{6}; \frac{7}{2} ) = (6.83; 3.50)\\
-(1; 6 )
-\end{align*}
+\begin{table}
+\centering
+\caption{Messdaten für dubiose Elemente.}
+\begin{tabular}{S S S S S S S S}
+\toprule
+\multicolumn{1}{c}{Clusterzentrum} & \multicolumn{6}{c}{Datenpunkte} \\
+\midrule
+\text{(2.75, 2.50)}        &\text{(5,1)}& \text{(3,3)} & \text{(3,2)}& \text{(4,1)}&& \\
+\text{(6.83, 3.50)}&\text{(6,2)}&\text{(6,3)}&\text{(8,4)}&\text{(8,5)}&\text{(8,6)}& \\
+\text{(1.00, 5.50) }           &\text{(1,6)}& \text{(1,5)}&\text{(1,4)}&&&\\
+\bottomrule
+\end{tabular}
+\end{table}
 
 
-\begin{align*}
-\text{neue Clusterzentren:}\\
-(\frac{17}{6}; \frac{8}{3} ):(3;2) (3;3) (4;1) (5;1) \\
-(\frac{41}{6}; \frac{7}{2} ): (6;2) (6;3) (8;4) (8;5) (8;6) \\
-(1; 6 ): (1;4) (1;5) (1;6) 
-\end{align*}
 
 
-\begin{align*}
-\text{neue Clusterzentren:}\\
-(\frac{15}{4}; \frac{7}{4} ) = (3.75; 1.75)\\
- (7; 2)\\
-(1; 5 )
-\end{align*}
+\begin{table}
+\centering
+\caption{Messdaten für dubiose Elemente.}
+\begin{tabular}{S S S S S S S S}
+\toprule
+\multicolumn{1}{c}{Clusterzentrum} & \multicolumn{6}{c}{Datenpunkte} \\
+\midrule
+\text{(3.75, 1.75)}        &\text{(5,1)}& \text{(3,3)} & \text{(3,2)}& \text{(4,1)}&\text{(6,2)}& \\
+\text{(7.20, 4.00)}&\text{(6,3)}&\text{(8,4)}&\text{(8,5)}&\text{(8,6)}&& \\
+\text{(1.00, 5.00) }           &\text{(1,6)}& \text{(1,5)}&\text{(1,4)}&&&\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\centering
+\caption{Messdaten für dubiose Elemente.}
+\begin{tabular}{S S S S S S S S}
+\toprule
+\multicolumn{1}{c}{Clusterzentrum} & \multicolumn{6}{c}{Datenpunkte} \\
+\midrule
+\text{(4.20, 1.80)}        &\text{(5,1)}& \text{(3,3)} & \text{(3,2)}& \text{(4,1)}&\text{(6,2)}& \\
+\text{(7.50, 4.50)}&\text{(6,3)}&\text{(8,4)}&\text{(8,5)}&\text{(8,6)}&& \\
+\text{(1.00, 5.00) }           &\text{(1,6)}& \text{(1,5)}&\text{(1,4)}&&&\\
+\bottomrule
+\end{tabular}
+\end{table}
 
 
-\begin{align*}
-\text{neue Clusterzentren:}\\
-(\frac{15}{4}; \frac{7}{4} ):(3;2) (3;3) (4;1) (5;1) \\
- (7; 2): (6;2) (6;3) (8;4) (8;5) (8;6) \\
-(1; 5 ): (1;4) (1;5) (1;6) 
-\end{align*}
+\begin{table}
+\centering
+\caption{Messdaten für dubiose Elemente.}
+\begin{tabular}{S S S S S S S S}
+\toprule
+\multicolumn{1}{c}{Clusterzentrum} & \multicolumn{6}{c}{Datenpunkte} \\
+\midrule
+\text{(4.20, 1.80)}        &\text{(5,1)}& \text{(3,3)} & \text{(3,2)}& \text{(4,1)}&\text{(6,2)}& \\
+\text{(7.50, 4.50)}&\text{(6,3)}&\text{(8,4)}&\text{(8,5)}&\text{(8,6)}&& \\
+\text{(1.00, 5.00) }           &\text{(1,6)}& \text{(1,5)}&\text{(1,4)}&&&\\
+\bottomrule
+\end{tabular}
+\end{table}
+
 
 \end{itemize}
 \section*{Aufgabe 3: \emph{Feature Selection mit dem MRMR--Algorthmus}}
+\begin{itemize}
+\item[a), b) und c)]
+\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Rapidminer/Datenbereinigung.png}
+	\caption{Reduktion der Datensätze auf insgesamt $4000$ Ereignisse. Anschließend werden die Daten bereinigt, indem einige Attribute, zum Beispiel wegen fehlender Werte, entfernt werden. Ein \emph{label} wird vergeben, um Signal und Untergrund voneinander unterscheiden zu können.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Rapidminer/Datenbereinigung_2.png}
+	\caption{Ergebnisse der Datenbereinigung. Es sind $4000$ Ereignisse mit $146$ regulären und einem speziellen Attribut übrig. Dabei wurde unter anderem der für Aufgabe b) benötigte Operator "Remove Useless Attributes" benutzt.}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{Rapidminer/Zusammenfassung.png}
+	\caption{Prozess zur Erstellung eines Plots für die Stabilität der Attributsauswahl.}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{Rapidminer/MRMR_results.png}
+	\caption{ Projektion der Populationen auf die Gerade $\lambda_1$}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{Rapidminer/Plot.png}
+	\caption{Darstellung der Stabilität der zuvor getätigten Attributsauswahl.}
+\end{figure}
