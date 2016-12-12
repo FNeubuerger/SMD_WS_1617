@@ -103,8 +103,11 @@ def aufg1():
 	err_labels.columns=['prediction','label']
 	print(err_labels)
 	'''
-	if err_labels['prediction']==True and err_labels['label']==1
+	if err_labels['prediction'][i]==True and err_labels['label'][i]==1
 		tp.append(1) #usw...
+	oder if errors[i]==True ...
+
+	oder bool durch int ersetzen oder andersrum und maske
 	'''
 	
 
