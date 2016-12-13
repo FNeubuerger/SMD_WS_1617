@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1481623100 "main.tex" "build/main.pdf" "main" 1481623103
+["pdflatex"] 1481623319 "main.tex" "build/main.pdf" "main" 1481623322
   "../header.tex" 1481102360 2711 645726e5e69ee7c2362a3029f8e0d1c8 ""
   "/home/opiate/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/home/opiate/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
@@ -156,11 +156,11 @@
   "/home/opiate/.local/texlive/2016/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1480339316 15157 ae6d8f7e92550bc93109a74b5f6c62ae ""
   "/home/opiate/.local/texlive/2016/texmf-var/luatex-cache/generic/names/luaotfload-names.luc" 1476564109 1628688 345f724b079b6238b1ed72c7806d7461 ""
   "/home/opiate/.local/texlive/2016/texmf-var/web2c/luatex/lualatex.fmt" 1476447226 1246156 a2c067a7405bbacfa1a867a74a8a046e ""
-  "build/main.aux" 1481623103 729 28b282f1f4b70ebf2962677c7ec2a434 ""
-  "exercises.tex" 1481623098 1773 6e72a4b85f0400e7f7db620170c8d620 ""
+  "build/main.aux" 1481623322 729 28b282f1f4b70ebf2962677c7ec2a434 ""
+  "exercises.tex" 1481623304 1768 eda96578903c80757947ea639a0a0cc4 ""
   "main.tex" 1481102360 639 f6dcc16f3fea10ab2e3b84caa76d489c ""
   (generated)
-  "build/main.log"
-  "build/main.pdf"
   "/home/opiate/.local/texlive/2016/texmf-var/m_t_x_t_e_s_t.tmp"
+  "build/main.pdf"
   "build/main.aux"
+  "build/main.log"
