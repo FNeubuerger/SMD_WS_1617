@@ -132,10 +132,15 @@ def aufg1():
 	data=test.append(train)
 	test_labels=test['label']
 	train_labels=train['label']
+	###für e/f
+	#test['AnzahlHits']=np.log10(test['AnzahlHits'])
+	#train['AnzahlHits']=np.log10(train['AnzahlHits'])
+	#print(test)
 	#print(data)
 	#plot(data,'x','y',color='label')
 	#hier könnte man noch mal über k iterieren
-	result = test.apply(lambda row: knn(row,train,train_labels,k=10),axis=1)
+
+	result = test.apply(lambda row: knn(row,train,train_labels,k=20),axis=1)
 	#result.columns=['0','1']
 	#print(result)
 	
@@ -187,11 +192,34 @@ def aufg1():
 	print('Signifikanz: ',significance)
 
 	'''
+	k=10
 	Reinheit  0.971604447974583
 	Effizienz 0.9786
 	Accuracy  0.975
 	Signifikanz:  50.36
 	---114.47622203826904 seconds---
+
+	k=20
+	Reinheit  0.9601822503961965
+	Effizienz 0.9694
+	Accuracy  0.9646
+	Signifikanz:  50.48
+	---136.59338474273682 seconds---
+
+	---log10Hits---
+	k=10
+	Reinheit  1.0
+	Effizienz 1.0
+	Accuracy  1.0
+	Signifikanz:  50.0
+	---185.95175766944885 seconds---
+
+	k=20
+	Reinheit  1.0
+	Effizienz 0.9998
+	Accuracy  0.9999
+	Signifikanz:  49.99
+	---186.45055532455444 seconds---
 	'''
 
 	print('---%s seconds---' %(time.time() -start_time))
