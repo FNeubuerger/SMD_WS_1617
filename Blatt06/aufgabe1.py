@@ -186,6 +186,14 @@ def aufg1():
 	print('Accuracy ',acc)
 	print('Signifikanz: ',significance)
 
+	'''
+	Reinheit  0.971604447974583
+	Effizienz 0.9786
+	Accuracy  0.975
+	Signifikanz:  50.36
+	---114.47622203826904 seconds---
+	'''
+
 	print('---%s seconds---' %(time.time() -start_time))
 if __name__ == '__main__':
 	aufg1()
