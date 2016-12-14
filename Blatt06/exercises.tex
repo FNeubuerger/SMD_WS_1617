@@ -36,6 +36,43 @@
 
 
 \end{itemize}
-\section*{Aufgabe 2: \emph{kMeans per Hand}}
+\section*{Aufgabe 2: \emph{Lineare Klassifikation mit Softmax}}
+\begin{align*}
+&x_i: M \times 1&\\
+&W: K \times M& \\
+&b: K \times 1& \\
+&f: K \times 1& \\
+\end{align*}
 
-\section*{Aufgabe 3: \emph{Feature Selection mit dem MRMR--Algorthmus}}
+
+
+\section*{Aufgabe 3: \emph{Binärer Entscheidungsbaum: Die erste Entscheidung}}
+
+\begin{align*}
+S(a,b,c) = -\frac{a}{b}\log_2{\frac{a}{b}}-\frac{c}{b}\log_2{\frac{c}{b}}
+\end{align*}
+
+Die Gesamtentropie berechnet sich mit Hilfe der gesamten Anzahl von Tagen, an denen Fußball gespielt beziehungsweise nicht gespielt wurde.
+
+\begin{align*}
+&S(9,14,5) = -\frac{9}{14}\log_2{\frac{9}{14}}-\frac{5}{14}\log_2{\frac{5}{14}}= 0.940\\\\
+&a: \text{Anzahl aller Tage mit Fußballspiel}\\
+&b: \text{Anzahl aller Spieltage}\\
+&c: \text{Anzahl aller Tage ohne Fußballspiel}\\
+\end{align*}
+
+Die Information für den Schnitt auf dem Attribut \emph{Wind} berechnet sich mit Hilfe der Anzahl von Tagen, an denen das Attribut \emph{Wind} den Wert \emph{false} beziehungsweise \emph{true} aufweist und der Anzahl von Tagen, an denen innerhalb dieser Klassifikation Fußball gespielt beziehungsweise nicht gespielt wurde.
+
+\begin{align*}
+ &\text{kein Wind}: 8    &\text{Wind}:6\\
+ &\text{kein Wind + kein Fußball}:2& \text{Wind + kein Fußball}:3\\
+&\text{kein Wind + Fußball}:6 & \text{Wind + Fußball}:3\\
+\end{align*}
+
+\begin{align*}
+&S(Wind_{false}) = -\frac{2}{8}\log_2{\frac{2}{8}}-\frac{6}{8}\log_2{\frac{6}{8}} = 0.811\\
+&S(Wind_{true}) = -\frac{3}{6}\log_2{\frac{3}{6}}-\frac{3}{6}\log_2{\frac{3}{6}}= 1.000\\
+&I(Wind) = S(9,14,5) - \frac{8}{14}0.81 - \frac{6}{14}1.00 = 0.048
+\end{align*}
+
+
