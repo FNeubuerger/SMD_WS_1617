@@ -3,9 +3,30 @@
 \begin{itemize}
 \item[a)] 
 \begin{equation*}
-<N_{on}> = s - b \alpha
+<N_{on}> = s + b \alpha
 \end{equation*}
 \item[b)] Eine Poisson--Verteilung modelliert eine Wahrscheinlichkeitsverteilung von Ereignissen, die unabhängig voneinander in eienm gewissen Zeitraum im Detektor ankommen.
+\item[c)]
+\begin{align*}
+L(b)=\frac{1}{\Pi_{i=1}^n x_i!}b^{\sum_{i=1}^n x_i}e^{-bn}\\
+L(s)=\frac{1}{\Pi_{i=1}^n x_i!}s^{\sum_{i=1}^n x_i}e^{-sn}\\
+L(b,s)=L(b)+L(s)
+\end{align*}
+
+\begin{align*}
+\ln(L(b,s))=\sum_{i=1}^n x_i \left(\ln(b)+\ln(s)\right)-2\ln\left(\Pi_{i=1}^n x_i!\right)-n(b+s)
+\end{align*}
+
+\begin{align*}
+\frac{\partial \ln(L(b,s))}{\partial b}=\sum_{i=1}^n x_i b^{-1}n\\
+\frac{\partial \ln(L(b,s))}{\partial s}=\sum_{i=1}^n x_i s^{-1}n
+\end{align*}
+
+\begin{align*}
+b=\sum_{i=1}^n x_i n^{-1}\\
+s=\sum_{i=1}^n x_i n^{-1}
+\end{align*}
+
 \end{itemize}
 
 
