@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1482258339 "main.tex" "build/main.pdf" "main" 1482258348
+["pdflatex"] 1482272387 "main.tex" "build/main.pdf" "main" 1482272403
   "../header.tex" 1481234005 2730 382df938ef5f5400939112cf2148cca7 ""
   "/home/helena/.local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/home/helena/.local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
@@ -170,15 +170,15 @@
   "/home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmsans10-bold.luc" 1414652430 125301 d199515a21605aa87ee7b2f69d9fa22f ""
   "/home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmsans10-boldoblique.luc" 1470157447 129358 20dc0b128ce84fa52d730125f60a3551 ""
   "/home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmsans10-regular.luc" 1414652422 124435 64c127e30d3d52defcdaec740033c696 ""
-  "/home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1478639576 22751 f356f7b264cdd9b361fc7a659e85d057 ""
+  "/home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1482263536 23045 a679505aaadca50d4126afb8ac36ecc4 ""
   "/home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/names/luaotfload-names.luc" 1465285256 670998 adbccbbbebabc6f2ba78e155b6c36414 ""
   "/home/helena/.local/texlive/2014/texmf-var/web2c/luatex/lualatex.fmt" 1413639403 676375 4f0dd0e5a5f161441d0cdeed183d18a3 ""
-  "build/main.aux" 1482258347 693 e62c83cfda8a80ee18afc02c7afeacc4 ""
+  "build/main.aux" 1482272402 693 e62c83cfda8a80ee18afc02c7afeacc4 ""
   "exercises.tex" 1482258337 1690 0bfbbdabd02d9e410c157e859c6a0355 ""
-  "main.tex" 1481223547 639 f6dcc16f3fea10ab2e3b84caa76d489c ""
+  "main.tex" 1482272384 640 b390cc6950a620eddef0788f79145668 ""
   (generated)
-  "build/main.aux"
+  "/home/opiate/.local/texlive/2016/texmf-var/m_t_x_t_e_s_t.tmp"
   "/home/helena/.local/texlive/2014/texmf-var/m_t_x_t_e_s_t.tmp"
   "build/main.log"
-  "/home/opiate/.local/texlive/2016/texmf-var/m_t_x_t_e_s_t.tmp"
+  "build/main.aux"
   "build/main.pdf"
