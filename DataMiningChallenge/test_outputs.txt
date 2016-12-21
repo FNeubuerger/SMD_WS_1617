@@ -1,0 +1,76 @@
+Outputs
+
+auto-sklearn classification
+tldr adaboost
+
+
+auto-sklearn regression
+
+Models [(0.620000, SimpleRegressionPipeline(configuration={
+  'imputation:strategy': 'most_frequent',
+  'one_hot_encoding:minimum_fraction': 0.003428823661714529,
+  'one_hot_encoding:use_minimum_fraction': 'True',
+  'preprocessor:__choice__': 'feature_agglomeration',
+  'preprocessor:feature_agglomeration:affinity': 'manhattan',
+  'preprocessor:feature_agglomeration:linkage': 'complete',
+  'preprocessor:feature_agglomeration:n_clusters': 249,
+  'preprocessor:feature_agglomeration:pooling_func': 'mean',
+  'regressor:__choice__': 'k_nearest_neighbors',
+  'regressor:k_nearest_neighbors:n_neighbors': 1,
+  'regressor:k_nearest_neighbors:p': 2,
+  'regressor:k_nearest_neighbors:weights': 'uniform',
+  'rescaling:__choice__': 'none'})),
+(0.260000, SimpleRegressionPipeline(configuration={
+  'imputation:strategy': 'median',
+  'one_hot_encoding:use_minimum_fraction': 'False',
+  'preprocessor:__choice__': 'no_preprocessing',
+  'regressor:__choice__': 'gaussian_process',
+  'regressor:gaussian_process:nugget': 0.006586544743341737,
+  'regressor:gaussian_process:thetaL': 6.238854777504104e-05,
+  'regressor:gaussian_process:thetaU': 4.074624990314228,
+  'rescaling:__choice__': 'none'})),
+(0.080000, SimpleRegressionPipeline(configuration={
+  'imputation:strategy': 'median',
+  'one_hot_encoding:use_minimum_fraction': 'False',
+  'preprocessor:__choice__': 'select_percentile_regression',
+  'preprocessor:select_percentile_regression:percentile': 44.50471009447,
+  'preprocessor:select_percentile_regression:score_func': 'f_regression',
+  'regressor:__choice__': 'k_nearest_neighbors',
+  'regressor:k_nearest_neighbors:n_neighbors': 3,
+  'regressor:k_nearest_neighbors:p': 2,
+  'regressor:k_nearest_neighbors:weights': 'distance',
+  'rescaling:__choice__': 'min/max'})),
+(0.020000, SimpleRegressionPipeline(configuration={
+  'imputation:strategy': 'most_frequent',
+  'one_hot_encoding:use_minimum_fraction': 'False',
+  'preprocessor:__choice__': 'extra_trees_preproc_for_regression',
+  'preprocessor:extra_trees_preproc_for_regression:bootstrap': 'True',
+  'preprocessor:extra_trees_preproc_for_regression:criterion': 'mse',
+  'preprocessor:extra_trees_preproc_for_regression:max_depth': 'None',
+  'preprocessor:extra_trees_preproc_for_regression:max_features': 1.5301634998576228,
+  'preprocessor:extra_trees_preproc_for_regression:min_samples_leaf': 16,
+  'preprocessor:extra_trees_preproc_for_regression:min_samples_split': 17,
+  'preprocessor:extra_trees_preproc_for_regression:min_weight_fraction_leaf': 0.0,
+  'preprocessor:extra_trees_preproc_for_regression:n_estimators': 100,
+  'regressor:__choice__': 'gaussian_process',
+  'regressor:gaussian_process:nugget': 0.001398504460128628,
+  'regressor:gaussian_process:thetaL': 6.265083078863532e-05,
+  'regressor:gaussian_process:thetaU': 3.7295771369454953,
+  'rescaling:__choice__': 'normalize'})),
+(0.020000, SimpleRegressionPipeline(configuration={
+  'imputation:strategy': 'mean',
+  'one_hot_encoding:minimum_fraction': 0.08576784103440177,
+  'one_hot_encoding:use_minimum_fraction': 'True',
+  'preprocessor:__choice__': 'polynomial',
+  'preprocessor:polynomial:degree': 3,
+  'preprocessor:polynomial:include_bias': 'True',
+  'preprocessor:polynomial:interaction_only': 'True',
+  'regressor:__choice__': 'ridge_regression',
+  'regressor:ridge_regression:alpha': 0.0007561589915851283,
+  'regressor:ridge_regression:fit_intercept': 'True',
+  'regressor:ridge_regression:tol': 0.00012407039291380462,
+  'rescaling:__choice__': 'min/max'})),
+]
+
+tflearn test
+
