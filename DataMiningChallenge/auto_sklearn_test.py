@@ -1,10 +1,9 @@
-#from __future__ import absolute_import, division, print_function
 import autosklearn.regression
 import autosklearn.classification
 import sklearn.cross_validation
 import sklearn.datasets
 import sklearn.metrics
-
+import tensorflow as tf
 import tflearn
 
 def test_automl_classification():
@@ -63,9 +62,9 @@ def test_tflearn_regression():
 	# should output (close, not exact) y = [1.5315033197402954, 1.5585315227508545, 1.5855598449707031]
 
 def main():
-	#test_automl_classification()
+	test_automl_classification()
 	#test_automl_regression()
-	test_tflearn_regression()
+	#test_tflearn_regression()
 	return 0
 
 if __name__ == '__main__':
