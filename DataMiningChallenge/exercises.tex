@@ -1,0 +1,38 @@
+\section*{Aufgabe 1: \emph{Gammaastronomie}}
+
+\begin{itemize}
+\item[a)] 
+\begin{equation*}
+<N_{on}> = s - b \alpha
+\end{equation*}
+\item[b)] Eine Poisson--Verteilung modelliert eine Wahrscheinlichkeitsverteilung von Ereignissen, die unabhängig voneinander in eienm gewissen Zeitraum im Detektor ankommen.
+\end{itemize}
+
+
+
+\section*{Aufgabe 2: \emph{Stichprobenvarianz}}
+
+\section*{Aufgabe 3: \emph{Maximum--Likelihood}}
+\begin{itemize}
+\item[a)] Bestimmung der Schätzfunktion für dir verteilung $f(x)$:
+\begin{align*}
+f(x)&=
+	\begin{cases}
+		1/b & 0 \leq x \leq b\\
+		0	&\text{else}
+	\end{cases}\\
+L(x_1 ,... x_n,b) &= f_b(x_1)\cdot ... \cdot f_b(x_n)\\
+&=\frac{1}{b^n} 1_{x_1 \in [0,b]} \cdot ... \cdot 1_{x_n \in [0,b]}\\
+&=\frac{1}{b^n} 1_{x_{(n)} \leq b} \quad \text{mit: } x_{(n)} = \max\{x_i\} \\
+\hat{b}(x) &= \text{argmax}_{b>0} L(b) = x_{(n)} =  \max\{x_i\} 
+\end{align*}
+\item[b)] Erwartungstreue der Schätzfunktion $\hat{b}(x)$:
+\begin{align*}
+E(\hat{b}(x)) &= \frac{1}{n} \sum_{i=1}^n \max\{x_i\}\\ 
+&= \frac{n \max\{x_i\}}{n} \\
+&= \max\{x_i\} = \hat{b}(x)
+\end{align*}
+Also ist der Schätzer Erwartungstreu.
+
+\end{itemize}
+
