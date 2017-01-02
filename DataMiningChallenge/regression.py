@@ -5,11 +5,14 @@ import autosklearn.classification
 import sklearn.cross_validation
 import sklearn.datasets
 import sklearn.metrics
-
+from sklearn.preprocessing import Imputer
+from sklearn.preprocessing import LabelEncoder
 def generate_features(train_data,test_data):
 	### generates features on training and test set
 
 	return train , test
+
+
 
 
 def read_data(train_path,test_path,gen_features=False):
@@ -19,16 +22,28 @@ def read_data(train_path,test_path,gen_features=False):
 	train = pd.read_csv(train_path)
 	test = pd.read_csv(test_path)
 	if gen_features == True:
-		generate generate_features(train,test)
+		generate_features(train,test)
+	print(train)
+	print(test)
+	#convert to numbers (label encoder), impute convert back
+	#remove nans
+	imp = Imputer(missing_values='NA', strategy='median', axis=0)
+	imp.fit(train.values)
+	imp.fit(test.values)
+	train=imp.transform(train)
+	test=imp.transform(test)
+
+
 
 	return train,test
 
 
 def regression_automl(train_data,test_data):
 	#without cross validation
-	X_train = train_data#.drop(['SalePrice']) #data without target
-	y_train = train_data['SalePrice'] #target
-	X_test = test_data#.drop(['SalePrice'])
+	print(test_data.isnull())
+	X_train = train_data.values #data without target
+	y_train = train_data['SalePrice'].values #target
+	X_test = test_data.values
 	automl = autosklearn.regression.AutoSklearnRegressor()
 	automl.fit(X_train, y_train)
 	prediction = automl.predict(X_test)
@@ -36,11 +51,12 @@ def regression_automl(train_data,test_data):
 	print("Models",automl.show_models())
 	return 0
 
-def best_regression(train_data,test_data)
+def best_regression(train_data,test_data):
+	return 0
 
 def main():
 	train,test = read_data('train.csv','test.csv',gen_features=False)
-	regression_automl()
+	regression_automl(train,test)
 
 
 
