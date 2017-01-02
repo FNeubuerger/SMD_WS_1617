@@ -6,7 +6,7 @@ import sklearn.cross_validation
 import sklearn.datasets
 import sklearn.metrics
 from sklearn.preprocessing import Imputer
-from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import OneHotEncoder
 def generate_features(train_data,test_data):
 	### generates features on training and test set
 
@@ -26,21 +26,20 @@ def read_data(train_path,test_path,gen_features=False):
 	print(train)
 	print(test)
 	#convert to numbers (label encoder), impute convert back
+	train_dummies = pd.get_dummies(train)
+	test_dummies = pd.get_dummies(test)
 	#remove nans
 	imp = Imputer(missing_values='NA', strategy='median', axis=0)
-	imp.fit(train.values)
-	imp.fit(test.values)
-	train=imp.transform(train)
-	test=imp.transform(test)
-
-
+	imp.fit(train_dummies.values)
+	imp.fit(test_dummies.values)
+	train=imp.transform(train_dummies)
+	test=imp.transform(test_dummies)
 
 	return train,test
 
 
 def regression_automl(train_data,test_data):
 	#without cross validation
-	print(test_data.isnull())
 	X_train = train_data.values #data without target
 	y_train = train_data['SalePrice'].values #target
 	X_test = test_data.values
