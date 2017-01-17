@@ -1,7 +1,231 @@
 \section*{Aufgabe 1: \emph{Likelihoodkurve}}
+\begin{itemize}
+\item[a)]
+\begin{align*}
+L(\lambda) = \prod^3_(i=1)\frac{\lambda^{x_i}}{x_i!}e^{-\lambda}\\
+=\frac{\lambda^{13}}{13!}e^{-\lambda}\frac{\lambda^{8}}{8!}e^{-\lambda}\frac{\lambda^{9}}{9!}e^{-\lambda}\\
+=\frac{\lambda^{30}}{8!9!13!}e^{-3\lambda}\\
+\ln{L(\lambda)} = 30\ln{\lambda}-\ln{8!9!13!}-3\lambda\\
+-\ln{L(\lambda)} = -30\ln{\lambda}+\ln{8!9!13!}+3\lambda\\
+\end{align*}
 
+\item[b)]
+\begin{align*}
+\frac{\text{d}-\ln{L(\lambda)}}{\text{d}\lambda} = 0\\
+= \frac{\text{d}(-30\ln{\lambda}+\ln{8!9!13!}+3\lambda)}{\text{d}\lambda}\\
+=\frac{-30}{\lambda} + 3\\
+\Rightarrow \lambda = 10\\
+\end{align*}
+
+\begin{align*}
+\frac{\text{d}^2-\ln{L(\lambda)}}{\text{d}\lambda^2}|_{\lambda=10}\\
+\frac{\text{d}(\sfrac{-30}{\lambda}+3}{\text{d}\lambda}|_{\lambda=10}\\
+=\frac{-30}{\lambda^2}|_{\lambda=10}\\
+= 0.3 \\
+\end{align*}
+
+\item[c)] Die Linien stellen verschiedene Standardabweichungen dar.
+
+\begin{align*}
+-30\ln{10}+30 + 0.5 = -30\ln{\lambda} + 3\lambda \\
+\lambda_{\frac{1}{2_1}} = 8.2836\\
+\lambda_{\frac{1}{2_2}} = 11.9385\\
+-30\ln{10}+30 + 2 = -30\ln{\lambda} + 3\lambda \\
+\lambda_{2_1} = 6.7788\\
+\lambda_{2_2} = 14.1088\\
+-30\ln{10}+30 + \frac{9}{2} = -30\ln{\lambda} + 3\lambda \\
+\lambda_{\frac{9}{2_1}} = 5.4743\\
+\lambda_{\frac{9}{2_2}} = 16.5197\\
+\end{align*}
+
+\item[d)]$-\ln{L(\lambda)} = f(\lambda)$ wird um den Punkt $\lambda  = 10 $ entwickelt.
+
+\begin{align*}
+f(\lambda) = -30\ln{\lambda}+\ln{8!9!13!}+3\lambda\\
+f(10) = 6.88104\\
+f'(\lambda) = 3-\frac{30}{\lambda}\\
+f'(10) = 0\\
+f''(\lambda) = \frac{30}{\lambda^2}\\
+f''(10) = 0.3\\
+T(f(\lambda),\lambda=10) = 6.88104 + 0 + \frac{0.3}{2}(\lambda-10)^2 = 0.15\lambda^2 - 3\lambda + 21.881
+\end{align*}
+Kürzen von $-\ln{L_{max}}$ auf beiden Seiten führt zu den Lösungen für die verschiedenen Punkte.
+
+\begin{align*}
+0.15 \lambda^2 -3\lambda + 15 = 0.5\\
+\lambda_{\frac{1}{2_1}} = 8.1743\\
+\lambda_{\frac{1}{2_2}} = 11.8257\\
+0.15 \lambda^2 -3\lambda + 15 = 2\\
+\lambda_{2_1 } = 6.3485\\
+\lambda_{2_2 }= 13.6515\\ 
+0.15 \lambda^2 -3\lambda + 15 = \frac{9}{2}\\
+\lambda_{\frac{9}{2_1}} = 4.5228\\
+\lambda_{\frac{9}{2_2}} = 15.4772\\
+\end{align*}
+\end{itemize}
 \section*{Aufgabe 2: \emph{F-Praktikum}}
 
+\textbf{Aufgabe 2: F-Praktikum}
+\textbf{a) Designmatrix}
+\\
+Asymmetrie beschrieben durch
+\[
+f(\psi) = A_0 \cos(\psi + \delta).
+\]
+\\
+Wir nutzen den Ansatz eines linearen Modells
+\[
+f(\psi) = a_1 f_1(\psi) + a_2 f_2(\psi)
+\]
+mit 
+\[
+f_1(\psi) = \cos(\psi) + f_2(\psi) = \sin(\psi).
+\]
+\\
+Zunaechst bestimmen wir die Designmatrix $A$ mit den Spaltenelementen $f_1(\psi_i) = \cos(\psi_i)$ und $f_2(\psi_i) = \sin(\psi_i)$:
+\\
+A = 
+$\left(
+\begin{array}{cc}
+1 & 0 \\
+\frac{\sqrt(3)}{2} & \frac{1}{2} \\
+\frac{1}{2} & \frac{\sqrt(3)}{2} \\
+0 & 1 \\
+-\frac{1}{2} & \frac{\sqrt(3)}{2} \\
+-\frac{\sqrt(3)}{2} & \frac{1}{2} \\
+-1 & 0 \\
+-\frac{\sqrt(3)}{2} & -\frac{1}{2} \\
+-\frac{1}{2} & -\frac{\sqrt(3)}{2} \\
+0 & -1 \\
+\frac{1}{2} & -\frac{\sqrt(3)}{2} \\
+\frac{\sqrt(3)}{2} & -\frac{1}{2} 
+\end{array}
+\right)$
+\\
+\textbf{b) Berechnung des Vektors $a$} \\
+$\vec{a} = (A^{T}A)^{-1}A^{T}\vec{y}$
+\\
+$A^{T}A = 
+\left(
+\begin{array}{cccccc}
+1 & \frac{\sqrt(3)}{2} & \frac{1}{2} & 0 & -\frac{1}{2} & \cdots \\
+0 & \frac{1}{2} & \frac{\sqrt(3)}{2} & 1 & \frac{\sqrt(3)}{2} & \cdots
+\end{array}
+\right) \cdot
+\left(
+\begin{array}{cc}
+1 & 0 \\
+\frac{\sqrt(3)}{2} & \frac{1}{2} \\
+\frac{1}{2} & \frac{\sqrt(3)}{2} \\
+0 & 1 \\
+-\frac{1}{2} & \frac{\sqrt(3)}{2} \\
+-\frac{\sqrt(3)}{2} & \frac{1}{2} \\
+-1 & 0 \\
+-\frac{\sqrt(3)}{2} & -\frac{1}{2} \\
+-\frac{1}{2} & -\frac{\sqrt(3)}{2} \\
+0 & -1 \\
+\frac{1}{2} & -\frac{\sqrt(3)}{2} \\
+\frac{\sqrt(3)}{2} & -\frac{1}{2} 
+\end{array}
+\right)
+= \left(
+\begin{array}{cc}
+6 & 0 \\
+0 & 6
+\end{array}
+\right)
+\\
+\\$
+Zur Bestimmung der Inversen einer Diagonalmatrix, muss jedes diagonale Element durch sein inverses ersetzt werden.
+\\
+$\left(
+\begin{array}{cc}
+\frac{1}{6} & 0 \\
+0 & \frac{1}{6}
+\end{array}
+\right)
+\left(
+\begin{array}{cccccc}
+1 & \frac{\sqrt(3)}{2} & \frac{1}{2} & 0 & -\frac{1}{2} & \cdots \\
+0 & \frac{1}{2} & \frac{\sqrt(3)}{2} & 1 & \frac{\sqrt(3)}{2} & \cdots
+\end{array}
+\right)
+\\
+=
+\left(
+\begin{array}{cccccccccccc}
+\frac{1}{6} & \frac{\sqrt(3)}{12} & \frac{1}{22} & 0 & -\frac{1}{12} & -\frac{\sqrt(3)}{12} & -\frac{1}{6} & -\frac{\sqrt(3)}{12} & -\frac{1}{12} & 0 & \frac{1}{12} & \frac{\sqrt(3)}{12} \\
+0 & \frac{1}{12} & \frac{\sqrt(3)}{12} & \frac{1}{6} & \frac{\sqrt(3)}{12} & \frac{1}{22} & 0 & -\frac{1}{12} & -\frac{\sqrt(3)}{12} & -\frac{1}{6} & -\frac{\sqrt(3)}{12} & -\frac{1}{12}
+\end{array}
+\right)$
+\\
+Diese Matrix wird nun mit einem Vektor y multipliziert. Dieser Vektor enthaelt die gemessenen Asymmetrien.
+\\
+$\vec{y}^T = 
+\begin{array}{cccccccc}
+( & -0,032 & 0,010 & 0,057 & 0,068 & 0,076 & 0,080 \\
+0,031 & 0,005 & -0,041 & -0,090 & -0,088 & -0,074 & ) 
+\end{array}$
+\\
+Als Loesungsvektor erhaelt man
+$\vec{a} =
+\left(
+\begin{array}{c}
+-0,0341 \\
+ 0,0774
+\end{array}
+\right)$
+\begin{itemize}
+\item[c)]
+\begin{align*}
+W(\vec{y}) = \left(0.011)^{-2}\right)\mathds{1}_{12x12}
+\end{align*}
+
+\begin{align*}
+V(a)^{-1} = A^{T}WA= \left(0.011)^{-2}\right) A^{T}A = \left(0.011)^{-2}\right) \begin{pmatrix}
+6 & 0\\
+0 & 6
+\end{pmatrix}\\
+V(a) = \frac{121}{6000000}
+\begin{pmatrix}
+1 & 0\\
+0 & 1
+\end{pmatrix}\\
+\end{align*}
+$a_1$ und $a_2$ korrelieren nicht. Die Standartabweichung beträgt $\approx 0.00449073$ für $a_1$ und $a_2$.
+
+\item[d)]
+
+\begin{align*}
+A_0\cos{(\psi+\delta)} = A_0(\cos{(\psi)}\cos{(\delta)}- \sin{(\psi)}\sin{(\delta)})\\
+=A_0\cos{(\psi)}\cos{(\delta)}- A_0\sin{(\psi)}\sin{(\delta)}\\
+=a_1\cos{(\delta)}- a_2\sin{(\delta)}\\
+\cos{(\delta)} = a_1\left(\-\frac{a_2}{\sin{(\delta)}}^{-1}\right)\\
+\delta = \arctan{\left(-\frac{a_1}{a_2}\right)} = 1.12\pm 0.05\\
+A_0=-\frac{a_2}{\sin{\left(\arctan{\left(-\frac{a_1}{a_2}\right)}\right)}}
+\end{align*}
+
+Bestimmung der Kovarianz--Matrix
+
+\begin{align*}
+V = B^{T}V(\vec{a})B \\
+B = 
+\begin{pmatrix}
+\frac{\partial \gamma}{\partial a_1}& \frac{\partial \gamma}{\partial a_2} \\
+\frac{\partial A_0}{\partial a_1} & \frac{\partial A_0}{\partial a_2}\\
+\end{pmatrix}
+=
+\begin{pmatrix}
+\frac{a_1}{\sqrt{{a_1}²+{a_2}²}} & \frac{a_2}{\sqrt{{a_1}²+{a_2}²}} \\
+\frac{a_2}{\sqrt{{a_1}²+{a_2}²}} & -\frac{a_1}{\sqrt{{a_1}²+{a_2}²}}\\
+\end{pmatrix}
+V = 
+\begin{pmatrix}
+-0.4356 & -0.9001\\
+-0.9001 & 0.4356\\
+\end{pmatrix}
+\end{align*}
+\item[e)]
+Die Werte für $a_1,a_2,\delta$ und $A_0$ ändern sich nicht stark. Die Korrelation nimmt stark zu.
+\end{itemize}
 \section*{Aufgabe 3: \emph{Regularisierte kleinste Quadrate}}
-
-

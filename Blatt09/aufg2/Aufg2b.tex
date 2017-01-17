@@ -1,0 +1,120 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{ngerman}
+\usepackage{graphicx}
+
+\begin{document}
+
+\textbf{Aufgabe 2: F-Praktikum}
+\textbf{a) Designmatrix}
+\\
+Asymmetrie beschrieben durch
+\[
+f(\psi) = A_0 \cos(\psi + \delta).
+\]
+\\
+Wir nutzen den Ansatz eines linearen Modells
+\[
+f(\psi) = a_1 f_1(\psi) + a_2 f_2(\psi)
+\]
+mit 
+\[
+f_1(\psi) = \cos(\psi) + f_2(\psi) = \sin(\psi).
+\]
+\\
+Zunaechst bestimmen wir die Designmatrix $A$ mit den Spaltenelementen $f_1(\psi_i) = \cos(\psi_i)$ und $f_2(\psi_i) = \sin(\psi_i)$:
+\\
+A = 
+$\left(
+\begin{array}{cc}
+1 & 0 \\
+\frac{\sqrt(3)}{2} & \frac{1}{2} \\
+\frac{1}{2} & \frac{\sqrt(3)}{2} \\
+0 & 1 \\
+-\frac{1}{2} & \frac{\sqrt(3)}{2} \\
+-\frac{\sqrt(3)}{2} & \frac{1}{2} \\
+-1 & 0 \\
+-\frac{\sqrt(3)}{2} & -\frac{1}{2} \\
+-\frac{1}{2} & -\frac{\sqrt(3)}{2} \\
+0 & -1 \\
+\frac{1}{2} & -\frac{\sqrt(3)}{2} \\
+\frac{\sqrt(3)}{2} & -\frac{1}{2} 
+\end{array}
+\right)$
+\\
+\textbf{b) Berechnung des Vektors $a$} \\
+$\vec{a} = (A^{T}A)^{-1}A^{T}\vec{y}$
+\\
+$A^{T}A = 
+\left(
+\begin{array}{cccccc}
+1 & \frac{\sqrt(3)}{2} & \frac{1}{2} & 0 & -\frac{1}{2} & \cdots \\
+0 & \frac{1}{2} & \frac{\sqrt(3)}{2} & 1 & \frac{\sqrt(3)}{2} & \cdots
+\end{array}
+\right) \cdot
+\left(
+\begin{array}{cc}
+1 & 0 \\
+\frac{\sqrt(3)}{2} & \frac{1}{2} \\
+\frac{1}{2} & \frac{\sqrt(3)}{2} \\
+0 & 1 \\
+-\frac{1}{2} & \frac{\sqrt(3)}{2} \\
+-\frac{\sqrt(3)}{2} & \frac{1}{2} \\
+-1 & 0 \\
+-\frac{\sqrt(3)}{2} & -\frac{1}{2} \\
+-\frac{1}{2} & -\frac{\sqrt(3)}{2} \\
+0 & -1 \\
+\frac{1}{2} & -\frac{\sqrt(3)}{2} \\
+\frac{\sqrt(3)}{2} & -\frac{1}{2} 
+\end{array}
+\right)
+= \left(
+\begin{array}{cc}
+6 & 0 \\
+0 & 6
+\end{array}
+\right)
+\\
+\\$
+Zur Bestimmung der Inversen einer Diagonalmatrix, muss jedes diagonale Element durch sein inverses ersetzt werden.
+\\
+$\left(
+\begin{array}{cc}
+\frac{1}{6} & 0 \\
+0 & \frac{1}{6}
+\end{array}
+\right)
+\left(
+\begin{array}{cccccc}
+1 & \frac{\sqrt(3)}{2} & \frac{1}{2} & 0 & -\frac{1}{2} & \cdots \\
+0 & \frac{1}{2} & \frac{\sqrt(3)}{2} & 1 & \frac{\sqrt(3)}{2} & \cdots
+\end{array}
+\right)
+\\
+=
+\left(
+\begin{array}{cccccccccccc}
+\frac{1}{6} & \frac{\sqrt(3)}{12} & \frac{1}{22} & 0 & -\frac{1}{12} & -\frac{\sqrt(3)}{12} & -\frac{1}{6} & -\frac{\sqrt(3)}{12} & -\frac{1}{12} & 0 & \frac{1}{12} & \frac{\sqrt(3)}{12} \\
+0 & \frac{1}{12} & \frac{\sqrt(3)}{12} & \frac{1}{6} & \frac{\sqrt(3)}{12} & \frac{1}{22} & 0 & -\frac{1}{12} & -\frac{\sqrt(3)}{12} & -\frac{1}{6} & -\frac{\sqrt(3)}{12} & -\frac{1}{12}
+\end{array}
+\right)$
+\\
+Diese Matrix wird nun mit einem Vektor y multipliziert. Dieser Vektor enthaelt die gemessenen Asymmetrien.
+\\
+$\vec{y}^T = 
+\begin{array}{cccccccc}
+( & -0,032 & 0,010 & 0,057 & 0,068 & 0,076 & 0,080 \\
+0,031 & 0,005 & -0,041 & -0,090 & -0,088 & -0,074 & ) 
+\end{array}$
+\\
+Als Loesungsvektor erhaelt man
+$\vec{a} =
+\left(
+\begin{array}{c}
+-0,0341 \\
+ 0,0774
+\end{array}
+\right)$
+\end{document}	
