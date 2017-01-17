@@ -365,5 +365,6 @@ INPUT /home/opiate/.local/texlive/2016/texmf-dist/tex/latex/doublestroke/Udsrom.
 INPUT /home/opiate/.local/texlive/2016/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.tfm
 INPUT /home/opiate/.local/texlive/2016/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT /home/opiate/.local/texlive/2016/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
-INPUT ./Aufgabe3.pdf
-INPUT ./Aufgabe3.pdf
+INPUT build/main.aux
+INPUT build/main.aux
+INPUT /home/opiate/.local/texlive/2016/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.14)  17 JAN 2017 22:45
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.14)  17 JAN 2017 22:50
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -558,7 +558,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.249 seconds)
+luaotfload | main : initialization completed in 0.132 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX. (/home/opiate/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
 \l_fontspec_script_int=\count134
@@ -1617,18 +1617,31 @@ LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 LaTeX Font Info:    Try loading font information for U+dsrom on input line 182.
  (/home/opiate/.local/texlive/2016/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [4] (./Aufgabe3.pdf
-! String contains an invalid utf-8 sequence.
-l.9 x
-   Úíí]]6ð}}ZRÒ×ßß†ÚÓÓÝÝSSuÊÛÛÞÞjjå  
+) [4])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
+ (./build/main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
+Package rerunfilecheck Info: File `main.aux' has not changed.
+(rerunfilecheck)             Checksum: 28B282F1F4B70EBF2962677C7EC2A434;729.
+)
 
 Here is how much of LuaTeX's memory you used:
- 36228 strings out of 495118
+ 36227 strings out of 495118
  100000,953878 words of node,token memory allocated
- 19665 words of node memory still in use:
-   404 hlist, 37 vlist, 41 rule, 22 disc, 9 local_par, 1 dir, 102 math, 1070 glue, 137 kern, 43 penalty, 5 margin_kern, 647 glyph, 439 attribute, 57 glue_spec, 439 attribute_list, 1 temp, 1 pdf_dest, 8 pdf_colorstack nodes
-   avail lists: 1:1,2:480,3:39,4:10,5:168,6:588,7:817,8:123,9:702,10:4,11:25
- 38731 multiletter control sequences out of 65536+600000
- 162 fonts using 45392507 bytes
+ 5546 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 636 glue, 1 kern, 160 attribute, 57 glue_spec, 160 attribute_list, 1 write nodes
+   avail lists: 1:1,2:1039,3:81,4:23,5:305,6:1244,7:1353,8:163,9:1134,10:4,11:47
+ 38730 multiletter control sequences out of 65536+600000
+ 162 fonts using 45392115 bytes
  62i,20n,64p,8836b,861s stack positions out of 5000i,500n,10000p,200000b,100000s
-!  ==> Fatal error occurred, no output PDF file produced!
+</home/opiate/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/opiate/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/opiate/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/opiate/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/opiate/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-boldoblique.otf></home/opiate/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/opiate/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/opiate/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></home/opiate/.local/texlive/2016/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb>
+Output written on main.pdf (5 pages, 50200 bytes).
+
+PDF statistics: 97 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

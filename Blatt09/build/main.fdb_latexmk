@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1484689540 "main.tex" "build/main.pdf" "main" 1484689540
+["pdflatex"] 1484689832 "main.tex" "build/main.pdf" "main" 1484689836
   "../header.tex" 1484688795 2750 55bbdc036756f9997c02d86515a6cdee ""
   "/home/opiate/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/home/opiate/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -23,6 +23,7 @@
   "/home/opiate/.local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm" 1136768653 768 d7b9a2629a0c353102ad947dc9221d49 ""
   "/home/opiate/.local/texlive/2016/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.tfm" 1136768653 452 168d896d9b2ead965bf08c9db69c947f ""
   "/home/opiate/.local/texlive/2016/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm" 1136768653 452 dc44cdd7c88ff2b15557f125edfc277b ""
+  "/home/opiate/.local/texlive/2016/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb" 1136849748 17014 61891910dfe21ad76f9789fdafdd860e ""
   "/home/opiate/.local/texlive/2016/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua" 1463608860 1972 1fb7c07d88e23d4594015b8b0aa21544 ""
   "/home/opiate/.local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/home/opiate/.local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1284331290 1458 43ab4710dc82f3edeabecd0d099626b2 ""
@@ -169,13 +170,12 @@
   "/home/opiate/.local/texlive/2016/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1482353939 15451 a5d1794432d6bf37b185d5c1f3ccd8b6 ""
   "/home/opiate/.local/texlive/2016/texmf-var/luatex-cache/generic/names/luaotfload-names.luc" 1476564109 1628688 345f724b079b6238b1ed72c7806d7461 ""
   "/home/opiate/.local/texlive/2016/texmf-var/web2c/luatex/lualatex.fmt" 1476447226 1246156 a2c067a7405bbacfa1a867a74a8a046e ""
-  "Aufgabe3.pdf" 1484689341 203650 4ed504de0baa2acd867d09469b5dc694 ""
-  "build/main.aux" 1484688795 693 e62c83cfda8a80ee18afc02c7afeacc4 ""
-  "exercises.tex" 1484689533 6602 8183e94351ae082400cf8d66c5f38e6d ""
+  "build/main.aux" 1484689836 729 28b282f1f4b70ebf2962677c7ec2a434 ""
+  "exercises.tex" 1484689828 6621 2769fca4977bb447c7806ea352e19174 ""
   "main.tex" 1484133063 638 c00cc7399d988a5ebd303a8f2b18445b ""
   (generated)
   "/home/opiate/.local/texlive/2016/texmf-var/m_t_x_t_e_s_t.tmp"
-  "/home/helena/.local/texlive/2014/texmf-var/m_t_x_t_e_s_t.tmp"
-  "build/main.log"
   "build/main.pdf"
   "build/main.aux"
+  "/home/helena/.local/texlive/2014/texmf-var/m_t_x_t_e_s_t.tmp"
+  "build/main.log"
