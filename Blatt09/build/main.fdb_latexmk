@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1484682762 "main.tex" "build/main.pdf" "main" 1484682772
-  "../header.tex" 1484681766 2750 55bbdc036756f9997c02d86515a6cdee ""
+["pdflatex"] 1484682762 "main.tex" "build/main.pdf" "main" 1484688804
+  "../header.tex" 1484688795 2750 55bbdc036756f9997c02d86515a6cdee ""
   "/home/helena/.local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/home/helena/.local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "/home/helena/.local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
@@ -183,12 +183,12 @@
   "/home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1483991232 23145 e94560deaf30ebcc0e5af1f8c9817452 ""
   "/home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/names/luaotfload-names.luc" 1465285256 670998 adbccbbbebabc6f2ba78e155b6c36414 ""
   "/home/helena/.local/texlive/2014/texmf-var/web2c/luatex/lualatex.fmt" 1413639403 676375 4f0dd0e5a5f161441d0cdeed183d18a3 ""
-  "build/main.aux" 1484682772 693 e62c83cfda8a80ee18afc02c7afeacc4 ""
-  "exercises.tex" 1484682759 6582 cf5be4fc4a21f5481490da9ffbdb2652 ""
-  "main.tex" 1484574600 638 c00cc7399d988a5ebd303a8f2b18445b ""
+  "build/main.aux" 1484688795 693 e62c83cfda8a80ee18afc02c7afeacc4 ""
+  "exercises.tex" 1484688795 6582 cf5be4fc4a21f5481490da9ffbdb2652 ""
+  "main.tex" 1484133063 638 c00cc7399d988a5ebd303a8f2b18445b ""
   (generated)
-  "build/main.log"
-  "/home/helena/.local/texlive/2014/texmf-var/m_t_x_t_e_s_t.tmp"
   "build/main.pdf"
   "/home/opiate/.local/texlive/2016/texmf-var/m_t_x_t_e_s_t.tmp"
+  "/home/helena/.local/texlive/2014/texmf-var/m_t_x_t_e_s_t.tmp"
+  "build/main.log"
   "build/main.aux"
