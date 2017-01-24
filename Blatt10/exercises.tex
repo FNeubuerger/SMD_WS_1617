@@ -1,4 +1,17 @@
-\section*{Aufgabe 1: \emph{Likelihoodkurve}}
+
+\section*{Aufgabe 1: \emph{Gamma-Astronomie}}
+\begin{itemize}
+\item[a)]
+\item[b)] 
+\begin{equation}
+\lambda = \frac{L(X|s_0 , \hat{b_0})}{L(X|\hat{s},\hat{b})} = \left( \frac{\alpha}{1+\alpha} \left( \frac{N_{on}+N_{off}}{N_{on}} \right) \right)^{N_{on}} \left( \frac{1}{1+\alpha} \left( \frac{N_{on}+N_{off}}{N_{on}} \right) \right)^{N_{off}}
+\end{equation}
+\item[c)]
+\begin{equation}
+S=\sqrt{-2\ln\lambda} = \sqrt{2}\left[ N_{on} \ln\left[\left( \frac{\alpha}{1+\alpha} \left( \frac{N_{on}+N_{off}}{N_{on}} \right) \right)\right] +  N_{off} \ln\left[\left( 1+\alpha \left( \frac{N_{on}+N_{off}}{N_{on}} \right) \right)\right] \right]^{\frac{1}{2}}
+\end{equation}
+\item[d)] keine zeit :(
+\end{itemize}
 
 \section*{Aufgabe 2: \emph{$\chi^2$--Test}}
 
@@ -10,4 +23,24 @@
 \chi^2 = \left((31.6-30.7)^2+(32.2-30.7)^2+(31.2-30.7)^2+(31.9-30.7)^2+(31.3-30.7)^2+(30.8-30.7)^2+(31.3-30.7)^2\right)\frac{1}{2} = 1.37
 \end{align*}
 
-\section*{Aufgabe 1: \emph{Likelihoodkurve}}
+\section*{Aufgabe 3: \emph{Likelihood-Quotienten-Test}}
+
+\begin{itemize}
+\item[a)] 
+Die erwarteten Maxima der Likelihoodverteilungen liegen bei den jeweiligen Mittelwerten der Messgröße.
+\begin{align*}
+L(\mu_0|x) &= P(x|\mu) = \exp\left[-\frac{x-\mu_0}{2\sigma^2}\right] \\
+\Gamma (x) &= \frac{L(\mu=\mu_0|x)}{\sup(L(\mu\in\Theta)|x)} = \frac{L(\mu=\mu_0|x)}{L(\mu=\mu_{\text{best}}|x)}\\
+&= \exp\left[ -\frac{n}{2\sigma^2} (\bar{\mu} - \mu_0)^2 \right]\\
+\text{Die Gegenhypothese trifft zu wenn: }\\
+\Gamma &= \exp\left[ -\frac{n}{2\sigma^2} (\bar{\mu} - \mu_0)^2 \right] \geq k_{\text{\alpha}}\\
+&\Leftrightarrow \frac{n |\bar{\mu}-\mu_0|}{\sqrt{\sigma^2}} \geq z\\
+\text{mit $\alpha=0.95$ folgt $z=1.64448$}\\
+\end{align*}
+\item[d)] 
+\begin{equation}
+\frac{|205-200|}{\sqrt{\frac{10^2}{25}}} = 2.5 > z=1.64448
+\end{equation}
+Daraus folgt dass die Gegenhypothese zutrifft.
+\end{itemize}
+ 
